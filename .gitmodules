@@ -1,0 +1,9 @@
+[submodule "deps/ValkyrieEngineCore"]
+	path = deps/ValkyrieEngineCore
+	url = https://github.com/VD-15/ValkyrieEngineCore
+[submodule "deps/static_math"]
+	path = deps/static_math
+	url = https://github.com/Morwenn/static_math
+[submodule "deps/Catch2"]
+	path = deps/Catch2
+	url = https://github.com/catchorg/Catch2

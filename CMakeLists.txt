@@ -12,10 +12,10 @@ project(ValkyrieEngineCommon VERSION 0.1.0)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/deps/ValkyrieEngineCore)
 add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/deps/static_math)
 
-option(VLK_COMMON_BUILD_TESTS "Build ValkyrieEngineCore test projects" OFF)
-
 add_library(ValkyrieEngineCommon
-	include/ValkyrieEngineCommon/ValkyrieEngineCommon.hpp
+	${CMAKE_CURRENT_SOURCE_DIR}/include/ValkyrieEngineCommon/ValkyrieEngineCommon.hpp
+	${CMAKE_CURRENT_SOURCE_DIR}/include/ValkyrieEngineCommon/Vector.hpp
+	${CMAKE_CURRENT_SOURCE_DIR}/src/ValkyrieEngineCommon.cpp
 )
 
 target_include_directories(ValkyrieEngineCommon PUBLIC
@@ -30,7 +30,8 @@ target_link_libraries(ValkyrieEngineCommon
 		ValkyrieEngineCore
 )
 
-if (BUILD_TESTING EQUAL ON)
-	add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/Catch2)
-	add_subdirectory(test)
+if (BUILD_TESTING)
+	enable_testing()
+	add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/deps/Catch2)
+	add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/test)
 endif()

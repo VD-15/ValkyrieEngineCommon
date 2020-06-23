@@ -24,6 +24,8 @@
 //  pure smath		(dynamic number): 150555ms
 //  pure smath		(static number)	:   1747ms
 
+//typedef float Float;
+
 namespace vlk
 {
 	/*!
@@ -203,9 +205,7 @@ namespace vlk
 			x(0.0f),
 			y(0.0f),
 			z(0.0f)
-		{
-
-		}
+		{ }
 
 		constexpr Vector3(Float xyz) :
 			x(xyz),
@@ -219,11 +219,11 @@ namespace vlk
 			z(z)
 		{ }
 
-		constexpr Vector3(const Vector2 xy, Float z) :
+		constexpr Vector3(const Vector2& xy, Float z) :
 			x(xy.x),
 			y(xy.y),
 			z(z)
-		{}
+		{ }
 
 		constexpr Vector3(const Vector3& v) = default;
 		constexpr Vector3(Vector3&& v) = default;
@@ -231,7 +231,7 @@ namespace vlk
 		constexpr Vector3& operator=(Vector3&& v) = default;
 		constexpr ~Vector3() = default;
 
-		constexpr operator Vector2() { return Vector2(this->x, this->y); }
+		constexpr operator Vector2() const { return Vector2(this->x, this->y); }
 
 		constexpr Vector3 operator-() const { return Vector3(-this->x, -this->y, -this->z); }
 		constexpr bool operator==(const Vector3& rhs) const { return x == rhs.x && y == rhs.y && z == rhs.z; }

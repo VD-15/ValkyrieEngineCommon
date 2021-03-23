@@ -34,7 +34,7 @@ namespace vlk
 	 * \param path The location of the content file on the disk.
 	 */
 	template <typename T>
-	T* ConstructContent(const std::string& path)
+	VLK_NODISCARD T* ConstructContent(const std::string& path)
 	{
 		VLK_STATIC_ASSERT_MSG((!std::is_same<T, T>::value), "Generic template for vlk::ConstructContent being compiled. Template must be specialized.");
 		throw std::runtime_error("Generic template for vlk::ConstructContent called. Template must be specialized.");
@@ -78,8 +78,10 @@ namespace vlk
 			{
 				//No data, on line
 				if (str.length() == 0) continue;
+
 				//Line is a comment
 				if (str[0] == '#') continue;
+				if (str[0] == '!') continue;
 
 				Size split = str.find_first_of('=');
 				//No key or no value or no '=' character, continue ro next line

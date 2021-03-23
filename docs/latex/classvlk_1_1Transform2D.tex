@@ -1,0 +1,377 @@
+\hypertarget{classvlk_1_1Transform2D}{}\doxysection{vlk\+::Transform2D Class Reference}
+\label{classvlk_1_1Transform2D}\index{vlk::Transform2D@{vlk::Transform2D}}
+
+
+2D geometric transform.  
+
+
+
+
+{\ttfamily \#include $<$Transform.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$Space S = Space\+::\+Local$>$ }\\\mbox{\hyperlink{classvlk_1_1Matrix3}{Matrix3}} \mbox{\hyperlink{classvlk_1_1Transform2D_a3e2b3a2a93a7795294089893c8976ba9}{Get\+Matrix}} () const
+\begin{DoxyCompactList}\small\item\em Gets a transformation matrix representing this transform of this object. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Space S = Space\+::\+Local$>$ }\\void \mbox{\hyperlink{classvlk_1_1Transform2D_ae212d2830e91924212a92a6572e0b4e4}{Set\+Matrix}} (const \mbox{\hyperlink{classvlk_1_1Matrix3}{Matrix3}} \&)
+\begin{DoxyCompactList}\small\item\em Sets this transform object to be equal to the transformation matrix provided. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Transform2D_a44e68f48a939f9527bf7f78168b4a0fa}\label{classvlk_1_1Transform2D_a44e68f48a939f9527bf7f78168b4a0fa}} 
+const \mbox{\hyperlink{classvlk_1_1Transform2D}{Transform2D}} $\ast$ \mbox{\hyperlink{classvlk_1_1Transform2D_a44e68f48a939f9527bf7f78168b4a0fa}{Get\+Parent}} () const
+\begin{DoxyCompactList}\small\item\em Gets the current parent of this transform object, may be {\ttfamily nullptr}. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Space S = Space\+::\+Local$>$ }\\void \mbox{\hyperlink{classvlk_1_1Transform2D_a6795e530db09c38590610b8cf7de62fa}{Set\+Parent}} (const \mbox{\hyperlink{classvlk_1_1Transform2D}{Transform2D}} $\ast$tr)
+\begin{DoxyCompactList}\small\item\em Sets the parent of this transform. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Space S = Space\+::\+Local$>$ }\\\mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \mbox{\hyperlink{classvlk_1_1Transform2D_a6ebd1876996f07a5f9074da045b63cbb}{Get\+Location}} () const
+\begin{DoxyCompactList}\small\item\em Gets the position of this transform. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Space S = Space\+::\+Local$>$ }\\void \mbox{\hyperlink{classvlk_1_1Transform2D_ab4249df4f332fd3c7248423b966d2be8}{Set\+Location}} (const \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \&v)
+\begin{DoxyCompactList}\small\item\em Sets the location of this transform. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Space S = Space\+::\+Local$>$ }\\Float \mbox{\hyperlink{classvlk_1_1Transform2D_af0b5786843c1fbacbecacf850344d802}{Get\+Rotation}} () const
+\begin{DoxyCompactList}\small\item\em Gets the rotation of this transform. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Space S = Space\+::\+Local$>$ }\\\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ Float $>$ \mbox{\hyperlink{classvlk_1_1Transform2D_a10a41e2b9f91e592203622735770d7fb}{Get\+Rotation}} (\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ void $>$) const
+\begin{DoxyCompactList}\small\item\em Gets the rotation of this transform. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Space S = Space\+::\+Local$>$ }\\void \mbox{\hyperlink{classvlk_1_1Transform2D_aedc664e2212ebc60b69a5e3e2756e34b}{Set\+Rotation}} (Float rotation)
+\begin{DoxyCompactList}\small\item\em Sets the rotation of this transform. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Space S = Space\+::\+Local$>$ }\\void \mbox{\hyperlink{classvlk_1_1Transform2D_a73cbfd2667032836a299fd75d5559d55}{Set\+Rotation}} (\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ Float $>$ rotation)
+\begin{DoxyCompactList}\small\item\em Sets the rotation of this transform. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Space S = Space\+::\+Local$>$ }\\\mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \mbox{\hyperlink{classvlk_1_1Transform2D_a03a926f276aff73ac0c460c229fbd5d6}{Get\+Scale}} () const
+\begin{DoxyCompactList}\small\item\em Gets the scale of this transform. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Space S = Space\+::\+Local$>$ }\\\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$ \mbox{\hyperlink{classvlk_1_1Transform2D_a7339183c9b6a9dbd6222a809846be186}{Get\+Scale}} (\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ void $>$) const
+\begin{DoxyCompactList}\small\item\em Gets the scale of this transform. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Space S = Space\+::\+Local$>$ }\\\mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \mbox{\hyperlink{classvlk_1_1Transform2D_ac17f079b8822b7562a72a9d9d0695872}{Translate}} (const \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \&v)
+\begin{DoxyCompactList}\small\item\em Translates this transform. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Space S = Space\+::\+Local$>$ }\\Float \mbox{\hyperlink{classvlk_1_1Transform2D_aae24a0b5b71cd577adf04e0c8a8a041c}{Rotate}} (Float a)
+\begin{DoxyCompactList}\small\item\em Rotates this transform. \end{DoxyCompactList}\item 
+{\footnotesize template$<$Space S = Space\+::\+Local$>$ }\\\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ Float $>$ \mbox{\hyperlink{classvlk_1_1Transform2D_a0490e5cbf7d0cbfaf572acf37677e962}{Rotate}} (\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ Float $>$ a)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+2D geometric transform. 
+
+Combines a scale, rotation and translation into a single operation. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvlk_1_1Transform2D_a6ebd1876996f07a5f9074da045b63cbb}\label{classvlk_1_1Transform2D_a6ebd1876996f07a5f9074da045b63cbb}} 
+\index{vlk::Transform2D@{vlk::Transform2D}!GetLocation@{GetLocation}}
+\index{GetLocation@{GetLocation}!vlk::Transform2D@{vlk::Transform2D}}
+\doxysubsubsection{\texorpdfstring{GetLocation()}{GetLocation()}}
+{\footnotesize\ttfamily template$<$Space S = Space\+::\+Local$>$ \\
+\mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} vlk\+::\+Transform2\+D\+::\+Get\+Location (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the position of this transform. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em S} & The coordinate space the returned position wil be relative to.~\newline
+ If {\ttfamily Space\+::\+Local}, the returned vector will be relative to the coordinate space of any parent transform this object has.~\newline
+ If {\ttfamily Space\+::\+Global}, the returned vector will be relative to the world coordiante space.~\newline
+ \\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{classvlk_1_1Transform2D_a3e2b3a2a93a7795294089893c8976ba9}\label{classvlk_1_1Transform2D_a3e2b3a2a93a7795294089893c8976ba9}} 
+\index{vlk::Transform2D@{vlk::Transform2D}!GetMatrix@{GetMatrix}}
+\index{GetMatrix@{GetMatrix}!vlk::Transform2D@{vlk::Transform2D}}
+\doxysubsubsection{\texorpdfstring{GetMatrix()}{GetMatrix()}}
+{\footnotesize\ttfamily template$<$Space S = Space\+::\+Local$>$ \\
+\mbox{\hyperlink{classvlk_1_1Matrix3}{Matrix3}} vlk\+::\+Transform2\+D\+::\+Get\+Matrix (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets a transformation matrix representing this transform of this object. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em S} & The coordinate space the returned matrix will be relative to.~\newline
+ If {\ttfamily Space\+::\+Local}, the returned matrix will be relative to the coordinate space of any parent transform this object has.~\newline
+ If {\ttfamily Space\+::\+Global}, the returned matrix will be relative to the world coordiante space.~\newline
+ \\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{classvlk_1_1Transform2D_af0b5786843c1fbacbecacf850344d802}\label{classvlk_1_1Transform2D_af0b5786843c1fbacbecacf850344d802}} 
+\index{vlk::Transform2D@{vlk::Transform2D}!GetRotation@{GetRotation}}
+\index{GetRotation@{GetRotation}!vlk::Transform2D@{vlk::Transform2D}}
+\doxysubsubsection{\texorpdfstring{GetRotation()}{GetRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$Space S = Space\+::\+Local$>$ \\
+Float vlk\+::\+Transform2\+D\+::\+Get\+Rotation (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the rotation of this transform. 
+
+Should any non-\/uniform scaling be applied on this transform or any of it\textquotesingle{}s parents, the rotation value returned may not be entirely accurate.
+
+\begin{DoxyReturn}{Returns}
+An angle, measured in radians.
+\end{DoxyReturn}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em S} & the coordinate space the returned angle will be relative to.~\newline
+ if {\ttfamily space\+::local}, the returned angle will be relative to the coordinate space of any parent transform this object has.~\newline
+ if {\ttfamily space\+::global}, the returned angle will be relative to the world coordiante space.~\newline
+ \\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{classvlk_1_1Transform2D_a10a41e2b9f91e592203622735770d7fb}\label{classvlk_1_1Transform2D_a10a41e2b9f91e592203622735770d7fb}} 
+\index{vlk::Transform2D@{vlk::Transform2D}!GetRotation@{GetRotation}}
+\index{GetRotation@{GetRotation}!vlk::Transform2D@{vlk::Transform2D}}
+\doxysubsubsection{\texorpdfstring{GetRotation()}{GetRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$Space S = Space\+::\+Local$>$ \\
+\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$Float$>$ vlk\+::\+Transform2\+D\+::\+Get\+Rotation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ void $>$}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the rotation of this transform. 
+
+Should any non-\/uniform scaling be applied on this transform or any of it\textquotesingle{}s parents, the rotation value returned may not be entirely accurate.
+
+\begin{DoxyReturn}{Returns}
+An angle, measured in radians.
+\end{DoxyReturn}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em S} & the coordinate space the returned angle will be relative to.~\newline
+ if {\ttfamily space\+::local}, the returned angle will be relative to the coordinate space of any parent transform this object has.~\newline
+ if {\ttfamily space\+::global}, the returned angle will be relative to the world coordiante space.~\newline
+\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classvlk_1_1Transform2D_a03a926f276aff73ac0c460c229fbd5d6}\label{classvlk_1_1Transform2D_a03a926f276aff73ac0c460c229fbd5d6}} 
+\index{vlk::Transform2D@{vlk::Transform2D}!GetScale@{GetScale}}
+\index{GetScale@{GetScale}!vlk::Transform2D@{vlk::Transform2D}}
+\doxysubsubsection{\texorpdfstring{GetScale()}{GetScale()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$Space S = Space\+::\+Local$>$ \\
+\mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} vlk\+::\+Transform2\+D\+::\+Get\+Scale (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the scale of this transform. 
+
+Should a rotation be applied on any parent of this transform, the scale value returned may not be entirely accurate.
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} object where each component represents the scale factor in that direction.
+\end{DoxyReturn}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em S} & the coordinate space the returned scale will be relative to.~\newline
+ if {\ttfamily space\+::local}, the returned scale will be relative to the coordinate space of any parent transform this object has.~\newline
+ if {\ttfamily space\+::global}, the returned scale will be relative to the world coordiante space.~\newline
+ \\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{classvlk_1_1Transform2D_a7339183c9b6a9dbd6222a809846be186}\label{classvlk_1_1Transform2D_a7339183c9b6a9dbd6222a809846be186}} 
+\index{vlk::Transform2D@{vlk::Transform2D}!GetScale@{GetScale}}
+\index{GetScale@{GetScale}!vlk::Transform2D@{vlk::Transform2D}}
+\doxysubsubsection{\texorpdfstring{GetScale()}{GetScale()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$Space S = Space\+::\+Local$>$ \\
+\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$\mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}}$>$ vlk\+::\+Transform2\+D\+::\+Get\+Scale (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ void $>$}]{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the scale of this transform. 
+
+Should a rotation be applied on any parent of this transform, the scale value returned may not be entirely accurate.
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} object where each component represents the scale factor in that direction.
+\end{DoxyReturn}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em S} & the coordinate space the returned scale will be relative to.~\newline
+ if {\ttfamily space\+::local}, the returned scale will be relative to the coordinate space of any parent transform this object has.~\newline
+ if {\ttfamily space\+::global}, the returned scale will be relative to the world coordiante space.~\newline
+\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classvlk_1_1Transform2D_a0490e5cbf7d0cbfaf572acf37677e962}\label{classvlk_1_1Transform2D_a0490e5cbf7d0cbfaf572acf37677e962}} 
+\index{vlk::Transform2D@{vlk::Transform2D}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!vlk::Transform2D@{vlk::Transform2D}}
+\doxysubsubsection{\texorpdfstring{Rotate()}{Rotate()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$Space S = Space\+::\+Local$>$ \\
+\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$Float$>$ vlk\+::\+Transform2\+D\+::\+Rotate (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ Float $>$}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+
+
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classvlk_1_1Transform2D_aae24a0b5b71cd577adf04e0c8a8a041c}\label{classvlk_1_1Transform2D_aae24a0b5b71cd577adf04e0c8a8a041c}} 
+\index{vlk::Transform2D@{vlk::Transform2D}!Rotate@{Rotate}}
+\index{Rotate@{Rotate}!vlk::Transform2D@{vlk::Transform2D}}
+\doxysubsubsection{\texorpdfstring{Rotate()}{Rotate()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$Space S = Space\+::\+Local$>$ \\
+Float vlk\+::\+Transform2\+D\+::\+Rotate (\begin{DoxyParamCaption}\item[{Float}]{a }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Rotates this transform. 
+
+Should any non-\/uniform scaling be applied on this transform or any of it\textquotesingle{}s parents, the scale of this transform may not be preserved exactly.
+
+
+\begin{DoxyParams}{Parameters}
+{\em a} & The number of radians to rotate this transform.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em S} & The coordinate space the rotation operation takes place in.~\newline
+ If {\ttfamily Space\+::\+Local}, the rotation is relative to the origin of this transform.~\newline
+ If {\ttfamily Space\+::\+Global}, the rotation is relative to the world origin.~\newline
+\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+The new rotation of this transform in coordinate space {\ttfamily S}. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classvlk_1_1Transform2D_ab4249df4f332fd3c7248423b966d2be8}\label{classvlk_1_1Transform2D_ab4249df4f332fd3c7248423b966d2be8}} 
+\index{vlk::Transform2D@{vlk::Transform2D}!SetLocation@{SetLocation}}
+\index{SetLocation@{SetLocation}!vlk::Transform2D@{vlk::Transform2D}}
+\doxysubsubsection{\texorpdfstring{SetLocation()}{SetLocation()}}
+{\footnotesize\ttfamily template$<$Space S = Space\+::\+Local$>$ \\
+void vlk\+::\+Transform2\+D\+::\+Set\+Location (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the location of this transform. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em S} & The coordinate space the given vector is relative to.~\newline
+ If {\ttfamily Space\+::\+Local}, the given vector should be relative to this transform\textquotesingle{}s parent, if one exists.~\newline
+ If {\ttfamily Space\+::\+Global}, the given vector should be relative to the world coordinate space.~\newline
+ \\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{classvlk_1_1Transform2D_ae212d2830e91924212a92a6572e0b4e4}\label{classvlk_1_1Transform2D_ae212d2830e91924212a92a6572e0b4e4}} 
+\index{vlk::Transform2D@{vlk::Transform2D}!SetMatrix@{SetMatrix}}
+\index{SetMatrix@{SetMatrix}!vlk::Transform2D@{vlk::Transform2D}}
+\doxysubsubsection{\texorpdfstring{SetMatrix()}{SetMatrix()}}
+{\footnotesize\ttfamily template$<$Space S = Space\+::\+Local$>$ \\
+void vlk\+::\+Transform2\+D\+::\+Set\+Matrix (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvlk_1_1Matrix3}{Matrix3}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets this transform object to be equal to the transformation matrix provided. 
+
+This object\textquotesingle{}s parent transform is not modified.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em S} & The coordinate space the given matrix is relative to.~\newline
+ If {\ttfamily Space\+::\+Local}, the given matrix should be relative to this transform\textquotesingle{}s parent, if one exists.~\newline
+ If {\ttfamily Space\+::\+Global}, the given matrix should be relative to the world coordinate space.~\newline
+ \\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{classvlk_1_1Transform2D_a6795e530db09c38590610b8cf7de62fa}\label{classvlk_1_1Transform2D_a6795e530db09c38590610b8cf7de62fa}} 
+\index{vlk::Transform2D@{vlk::Transform2D}!SetParent@{SetParent}}
+\index{SetParent@{SetParent}!vlk::Transform2D@{vlk::Transform2D}}
+\doxysubsubsection{\texorpdfstring{SetParent()}{SetParent()}}
+{\footnotesize\ttfamily template$<$Space S = Space\+::\+Local$>$ \\
+void vlk\+::\+Transform2\+D\+::\+Set\+Parent (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvlk_1_1Transform2D}{Transform2D}} $\ast$}]{tr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the parent of this transform. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tr} & The new parent of this transform or {\ttfamily nullptr} to remove the current parent. Additionally, {\ttfamily this} must not be equal to {\ttfamily tr} or any parent of {\ttfamily tr}.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em S} & Specifies the behaviour when changing parent objects.~\newline
+ If {\ttfamily Space\+::\+Local}, this transform will not retain it\textquotesingle{}s position in world space.~\newline
+ If {\ttfamily Space\+::\+Global}, this transform will attempt to retain the same position in world space.~\newline
+\\
+\hline
+\end{DoxyTemplParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & If {\ttfamily this} is already a parent of {\ttfamily tr}. \\
+\hline
+\end{DoxyExceptions}
+\mbox{\Hypertarget{classvlk_1_1Transform2D_a73cbfd2667032836a299fd75d5559d55}\label{classvlk_1_1Transform2D_a73cbfd2667032836a299fd75d5559d55}} 
+\index{vlk::Transform2D@{vlk::Transform2D}!SetRotation@{SetRotation}}
+\index{SetRotation@{SetRotation}!vlk::Transform2D@{vlk::Transform2D}}
+\doxysubsubsection{\texorpdfstring{SetRotation()}{SetRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$Space S = Space\+::\+Local$>$ \\
+void vlk\+::\+Transform2\+D\+::\+Set\+Rotation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ Float $>$}]{rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the rotation of this transform. 
+
+Should any non-\/uniform scaling be applied on this transform or any of it\textquotesingle{}s parents, the scale of this transform may not be preserved exactly.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em S} & the coordinate space the given angle is relative to.~\newline
+ if {\ttfamily space\+::local}, the rotation will be set relative to the coordinate space of any parent transform this object has.~\newline
+ if {\ttfamily space\+::global}, the rotation will be set relative to the world coordiante space.~\newline
+\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classvlk_1_1Transform2D_aedc664e2212ebc60b69a5e3e2756e34b}\label{classvlk_1_1Transform2D_aedc664e2212ebc60b69a5e3e2756e34b}} 
+\index{vlk::Transform2D@{vlk::Transform2D}!SetRotation@{SetRotation}}
+\index{SetRotation@{SetRotation}!vlk::Transform2D@{vlk::Transform2D}}
+\doxysubsubsection{\texorpdfstring{SetRotation()}{SetRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$Space S = Space\+::\+Local$>$ \\
+void vlk\+::\+Transform2\+D\+::\+Set\+Rotation (\begin{DoxyParamCaption}\item[{Float}]{rotation }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the rotation of this transform. 
+
+Should any non-\/uniform scaling be applied on this transform or any of it\textquotesingle{}s parents, the scale of this transform may not be preserved exactly.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em S} & the coordinate space the given angle is relative to.~\newline
+ if {\ttfamily space\+::local}, the rotation will be set relative to the coordinate space of any parent transform this object has.~\newline
+ if {\ttfamily space\+::global}, the rotation will be set relative to the world coordiante space.~\newline
+ \\
+\hline
+\end{DoxyTemplParams}
+\mbox{\Hypertarget{classvlk_1_1Transform2D_ac17f079b8822b7562a72a9d9d0695872}\label{classvlk_1_1Transform2D_ac17f079b8822b7562a72a9d9d0695872}} 
+\index{vlk::Transform2D@{vlk::Transform2D}!Translate@{Translate}}
+\index{Translate@{Translate}!vlk::Transform2D@{vlk::Transform2D}}
+\doxysubsubsection{\texorpdfstring{Translate()}{Translate()}}
+{\footnotesize\ttfamily template$<$Space S = Space\+::\+Local$>$ \\
+\mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} vlk\+::\+Transform2\+D\+::\+Translate (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Translates this transform. 
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em S} & The coordinate space the translate operation takes place in.~\newline
+ If {\ttfamily Space\+::\+Local}, the translation is relative to this transform\textquotesingle{}s parent, if one exists.~\newline
+ If {\ttfamily Space\+::\+Global}, the translation is relative to the world coordinate space.~\newline
+\\
+\hline
+\end{DoxyTemplParams}
+\begin{DoxyReturn}{Returns}
+The new position of this transform in coordinate space {\ttfamily S}. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Valkyrie\+Engine\+Common/Transform.\+hpp\end{DoxyCompactItemize}

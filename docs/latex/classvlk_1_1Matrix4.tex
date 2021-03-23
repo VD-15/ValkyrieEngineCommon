@@ -1,0 +1,339 @@
+\hypertarget{classvlk_1_1Matrix4}{}\doxysection{vlk\+::Matrix4 Class Reference}
+\label{classvlk_1_1Matrix4}\index{vlk::Matrix4@{vlk::Matrix4}}
+
+
+Stub for 4x4 matrix class.  
+
+
+
+
+{\ttfamily \#include $<$Matrix.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvlk_1_1Matrix4_aa1e944fd9868fcc1318794cdec322c16}\label{classvlk_1_1Matrix4_aa1e944fd9868fcc1318794cdec322c16}} 
+\mbox{\hyperlink{classvlk_1_1Matrix4_aa1e944fd9868fcc1318794cdec322c16}{Matrix4}} ()=default
+\begin{DoxyCompactList}\small\item\em Creates a matrix with all values initialized to 0.\+0. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvlk_1_1Matrix4_a0cb2397150a195f939eee44c0fbb970d}{Matrix4}} (Float x0, Float x1, Float x2, Float x3, Float y0, Float y1, Float y2, Float y3, Float z0, Float z1, Float z2, Float z3, Float w0, Float w1, Float w2, Float w3)
+\begin{DoxyCompactList}\small\item\em Initialize individual values of a matrix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvlk_1_1Matrix4_a8c7efa057c2862e43112b614f13e8397}{Matrix4}} (\mbox{\hyperlink{classvlk_1_1Vector4}{Vector4}} v0, \mbox{\hyperlink{classvlk_1_1Vector4}{Vector4}} v1, \mbox{\hyperlink{classvlk_1_1Vector4}{Vector4}} v2, \mbox{\hyperlink{classvlk_1_1Vector4}{Vector4}} v3)
+\begin{DoxyCompactList}\small\item\em Initialize a matrix with four \mbox{\hyperlink{classvlk_1_1Vector4}{Vector4}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk_1_1Matrix4_af6b64b237d37467b2e170c53d3153e75}{operator+}} (const Float f) const
+\begin{DoxyCompactList}\small\item\em Performs an addition to every cell of a matrix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk_1_1Matrix4_aa9a2d0099ebeccedaaf85d01ae5807f4}{operator-\/}} (const Float f) const
+\begin{DoxyCompactList}\small\item\em Performs a subtraction to every cell of a matrix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk_1_1Matrix4_a9baf79cb59f04edb8037703bf0fca922}{operator$\ast$}} (const Float f) const
+\begin{DoxyCompactList}\small\item\em Performs a scalar multiplication to every cell of a matrix. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk_1_1Matrix4_ac8c3da2f7ef8479052f43ea099a384e4}{operator/}} (const Float f) const
+\begin{DoxyCompactList}\small\item\em Performs a scalar division to every cell of a matrix. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Matrix4_a3855d1d6fbdf19879970669da15226ba}\label{classvlk_1_1Matrix4_a3855d1d6fbdf19879970669da15226ba}} 
+\mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk_1_1Matrix4_a3855d1d6fbdf19879970669da15226ba}{operator+}} (const \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Adds corresponding cells of two matrices. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Matrix4_af9c8c62aefd25c676975e5c8212c2ef8}\label{classvlk_1_1Matrix4_af9c8c62aefd25c676975e5c8212c2ef8}} 
+\mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk_1_1Matrix4_af9c8c62aefd25c676975e5c8212c2ef8}{operator-\/}} (const \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Subtracts corresponding cells of two matricies. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Matrix4_a41cb8ae78049525490f2636d7b4d590f}\label{classvlk_1_1Matrix4_a41cb8ae78049525490f2636d7b4d590f}} 
+\mbox{\hyperlink{classvlk_1_1Vector4}{Vector4}} \mbox{\hyperlink{classvlk_1_1Matrix4_a41cb8ae78049525490f2636d7b4d590f}{operator$\ast$}} (const \mbox{\hyperlink{classvlk_1_1Vector4}{Vector4}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em multiplies a matrix by a vector \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Matrix4_aa4f3d436d9747574907d6ffd5c2442e2}\label{classvlk_1_1Matrix4_aa4f3d436d9747574907d6ffd5c2442e2}} 
+\mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk_1_1Matrix4_aa4f3d436d9747574907d6ffd5c2442e2}{operator$\ast$}} (const \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em multiplies two matricies \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Matrix4_a10092560e9302bc47ca0ad1561ebf3f0}\label{classvlk_1_1Matrix4_a10092560e9302bc47ca0ad1561ebf3f0}} 
+\mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk_1_1Matrix4_a10092560e9302bc47ca0ad1561ebf3f0}{operator!}} () const
+\begin{DoxyCompactList}\small\item\em Returns the inverse of this matrix so that {\ttfamily m $\ast$ !m} is an identity matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvlk_1_1Matrix4_a615685948971ce4f788b7609b5240d12}\label{classvlk_1_1Matrix4_a615685948971ce4f788b7609b5240d12}} 
+static \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk_1_1Matrix4_a615685948971ce4f788b7609b5240d12}{Identity}} ()
+\begin{DoxyCompactList}\small\item\em Constructs an identity matrix. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Matrix4_ac3572f63b77bff32783c1da946ef8c27}\label{classvlk_1_1Matrix4_ac3572f63b77bff32783c1da946ef8c27}} 
+static \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk_1_1Matrix4_ac3572f63b77bff32783c1da946ef8c27}{Create\+Translation}} (const \mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} \&v)
+\begin{DoxyCompactList}\small\item\em Creates a matrix equivelant to the translation represented by {\ttfamily v}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Matrix4_af76e6a5a43657ad08bf4f5c69cdf6115}\label{classvlk_1_1Matrix4_af76e6a5a43657ad08bf4f5c69cdf6115}} 
+static \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk_1_1Matrix4_af76e6a5a43657ad08bf4f5c69cdf6115}{Create\+RotationX}} (const Float angle)
+\begin{DoxyCompactList}\small\item\em Creates a matrix representing a rotation of {\ttfamily angle} radians around the X-\/axis. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} $>$ \mbox{\hyperlink{classvlk_1_1Matrix4_a7845a17fcce9a9ae659cb400bc22fcba}{Create\+RotationX}} (\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ Float $>$ angle)
+\begin{DoxyCompactList}\small\item\em Creates a matrix representing a rotation of {\ttfamily angle} radians around the X-\/axis. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Matrix4_a266bc3bab80589b295e8d3ab9682c7c1}\label{classvlk_1_1Matrix4_a266bc3bab80589b295e8d3ab9682c7c1}} 
+static \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk_1_1Matrix4_a266bc3bab80589b295e8d3ab9682c7c1}{Create\+RotationY}} (const Float angle)
+\begin{DoxyCompactList}\small\item\em Creates a matrix representing a rotation of {\ttfamily angle} radians around the Y-\/axis. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} $>$ \mbox{\hyperlink{classvlk_1_1Matrix4_a073cd892d7e4597e0b0b8330dfb399c3}{Create\+RotationY}} (\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ Float $>$ angle)
+\begin{DoxyCompactList}\small\item\em Creates a matrix representing a rotation of {\ttfamily angle} radians around the Y-\/axis. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Matrix4_a827a698cd60a05addbbbbf8ec07f1149}\label{classvlk_1_1Matrix4_a827a698cd60a05addbbbbf8ec07f1149}} 
+static \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk_1_1Matrix4_a827a698cd60a05addbbbbf8ec07f1149}{Create\+RotationZ}} (const Float angle)
+\begin{DoxyCompactList}\small\item\em Creates a matrix representing a rotation of {\ttfamily angle} radians around the Z-\/axis. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} $>$ \mbox{\hyperlink{classvlk_1_1Matrix4_a5ecfbc34b545d4b8a07b06ce506a60c2}{Create\+RotationZ}} (\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ Float $>$ angle)
+\begin{DoxyCompactList}\small\item\em Creates a matrix representing a rotation of {\ttfamily angle} radians around the Z-\/axis. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk_1_1Matrix4_a3121b5c19e9b44357d89dbded2f800ea}{Create\+Rotation}} (const \mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} \&euler)
+\begin{DoxyCompactList}\small\item\em Creates a matrix representing a rotation equivelant to the given euler axis values. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} $>$ \mbox{\hyperlink{classvlk_1_1Matrix4_a0d25834cbd2ca6a71f679bc0f983ac9d}{Create\+Rotation}} (\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} $>$ euler)
+\begin{DoxyCompactList}\small\item\em Creates a matrix representing a rotation equivelant to the given euler axis values. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Matrix4_a1065a7c6cd1bf2b54437cc72b5e0f43a}\label{classvlk_1_1Matrix4_a1065a7c6cd1bf2b54437cc72b5e0f43a}} 
+static \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk_1_1Matrix4_a1065a7c6cd1bf2b54437cc72b5e0f43a}{Create\+Rotation}} (Float angle, const \mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} \&axis)
+\begin{DoxyCompactList}\small\item\em Creates a matrix representing a rotation of {\ttfamily angle} radians around the normalized axis {\ttfamily axis} \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} $>$ \mbox{\hyperlink{classvlk_1_1Matrix4_aff9660dcdd05d208d6e07c4504f634b8}{Create\+Rotation}} (\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ Float $>$ angle, \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} $>$ axis)
+\begin{DoxyCompactList}\small\item\em Creates a matrix representing a rotation of {\ttfamily angle} radians around the normalized axis {\ttfamily axis} \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Matrix4_ac7121fcb4515c9fcba60719240d70e81}\label{classvlk_1_1Matrix4_ac7121fcb4515c9fcba60719240d70e81}} 
+static \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk_1_1Matrix4_ac7121fcb4515c9fcba60719240d70e81}{Create\+Rotation}} (\mbox{\hyperlink{classvlk_1_1Quaternion}{Quaternion}} q)
+\begin{DoxyCompactList}\small\item\em Creates a matrix representing an equivelant roatation to quaternion {\ttfamily q}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Matrix4_adddd96d691c783d2dc57f7ccbf0b7f44}\label{classvlk_1_1Matrix4_adddd96d691c783d2dc57f7ccbf0b7f44}} 
+static \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk_1_1Matrix4_adddd96d691c783d2dc57f7ccbf0b7f44}{Create\+Scale}} (const \mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} \&v)
+\begin{DoxyCompactList}\small\item\em Creates a matrix that scales by the amount specified in {\ttfamily v}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Matrix4_a34706068439c1d8d8d1825749ba29c46}\label{classvlk_1_1Matrix4_a34706068439c1d8d8d1825749ba29c46}} 
+static \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk_1_1Matrix4_a34706068439c1d8d8d1825749ba29c46}{Create\+ReflectionX}} ()
+\begin{DoxyCompactList}\small\item\em Creates a matrix that reflects along the X-\/axis. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Matrix4_a49c2d9372dd7c5a83526882acd81bab6}\label{classvlk_1_1Matrix4_a49c2d9372dd7c5a83526882acd81bab6}} 
+static \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk_1_1Matrix4_a49c2d9372dd7c5a83526882acd81bab6}{Create\+ReflectionY}} ()
+\begin{DoxyCompactList}\small\item\em Creates a matrix that reflects along the Y-\/axis. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Matrix4_a13767723133008f39d2d7871590f1c3c}\label{classvlk_1_1Matrix4_a13767723133008f39d2d7871590f1c3c}} 
+static \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk_1_1Matrix4_a13767723133008f39d2d7871590f1c3c}{Create\+ReflectionZ}} ()
+\begin{DoxyCompactList}\small\item\em Creates a matrix that reflects along the Z-\/axis. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Stub for 4x4 matrix class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classvlk_1_1Matrix4_a0cb2397150a195f939eee44c0fbb970d}\label{classvlk_1_1Matrix4_a0cb2397150a195f939eee44c0fbb970d}} 
+\index{vlk::Matrix4@{vlk::Matrix4}!Matrix4@{Matrix4}}
+\index{Matrix4@{Matrix4}!vlk::Matrix4@{vlk::Matrix4}}
+\doxysubsubsection{\texorpdfstring{Matrix4()}{Matrix4()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily vlk\+::\+Matrix4\+::\+Matrix4 (\begin{DoxyParamCaption}\item[{Float}]{x0,  }\item[{Float}]{x1,  }\item[{Float}]{x2,  }\item[{Float}]{x3,  }\item[{Float}]{y0,  }\item[{Float}]{y1,  }\item[{Float}]{y2,  }\item[{Float}]{y3,  }\item[{Float}]{z0,  }\item[{Float}]{z1,  }\item[{Float}]{z2,  }\item[{Float}]{z3,  }\item[{Float}]{w0,  }\item[{Float}]{w1,  }\item[{Float}]{w2,  }\item[{Float}]{w3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialize individual values of a matrix. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\textcolor{comment}{//  |-\/-\/-\/-\/|-\/-\/-\/-\/|-\/-\/-\/-\/|-\/-\/-\/-\/|}}
+\DoxyCodeLine{\textcolor{comment}{//  | x0 | x1 | x2 | x3 |}}
+\DoxyCodeLine{\textcolor{comment}{//  |-\/-\/-\/-\/|-\/-\/-\/-\/|-\/-\/-\/-\/|-\/-\/-\/-\/|}}
+\DoxyCodeLine{\textcolor{comment}{//  | y0 | y1 | y2 | y3 |}}
+\DoxyCodeLine{\textcolor{comment}{//  |-\/-\/-\/-\/|-\/-\/-\/-\/|-\/-\/-\/-\/|-\/-\/-\/-\/|}}
+\DoxyCodeLine{\textcolor{comment}{//  | z0 | z1 | z2 | z3 |}}
+\DoxyCodeLine{\textcolor{comment}{//  |-\/-\/-\/-\/|-\/-\/-\/-\/|-\/-\/-\/-\/|-\/-\/-\/-\/|}}
+\DoxyCodeLine{\textcolor{comment}{//  | w0 | w1 | w2 | w3 | }}
+\DoxyCodeLine{\textcolor{comment}{//  |-\/-\/-\/-\/|-\/-\/-\/-\/|-\/-\/-\/-\/|-\/-\/-\/-\/|}}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{classvlk_1_1Matrix4_a8c7efa057c2862e43112b614f13e8397}\label{classvlk_1_1Matrix4_a8c7efa057c2862e43112b614f13e8397}} 
+\index{vlk::Matrix4@{vlk::Matrix4}!Matrix4@{Matrix4}}
+\index{Matrix4@{Matrix4}!vlk::Matrix4@{vlk::Matrix4}}
+\doxysubsubsection{\texorpdfstring{Matrix4()}{Matrix4()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily vlk\+::\+Matrix4\+::\+Matrix4 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1Vector4}{Vector4}}}]{v0,  }\item[{\mbox{\hyperlink{classvlk_1_1Vector4}{Vector4}}}]{v1,  }\item[{\mbox{\hyperlink{classvlk_1_1Vector4}{Vector4}}}]{v2,  }\item[{\mbox{\hyperlink{classvlk_1_1Vector4}{Vector4}}}]{v3 }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Initialize a matrix with four \mbox{\hyperlink{classvlk_1_1Vector4}{Vector4}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em v0} & The first column of the matrix \\
+\hline
+{\em v1} & The second column of the matrix \\
+\hline
+{\em v2} & The third column of the matrix \\
+\hline
+{\em v3} & The fourth column of the matrix \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvlk_1_1Matrix4_a3121b5c19e9b44357d89dbded2f800ea}\label{classvlk_1_1Matrix4_a3121b5c19e9b44357d89dbded2f800ea}} 
+\index{vlk::Matrix4@{vlk::Matrix4}!CreateRotation@{CreateRotation}}
+\index{CreateRotation@{CreateRotation}!vlk::Matrix4@{vlk::Matrix4}}
+\doxysubsubsection{\texorpdfstring{CreateRotation()}{CreateRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} vlk\+::\+Matrix4\+::\+Create\+Rotation (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} \&}]{euler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Creates a matrix representing a rotation equivelant to the given euler axis values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em euler} & A \mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} where every element represents the number of radians to turn around the respective axis. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classvlk_1_1Matrix4_aff9660dcdd05d208d6e07c4504f634b8}\label{classvlk_1_1Matrix4_aff9660dcdd05d208d6e07c4504f634b8}} 
+\index{vlk::Matrix4@{vlk::Matrix4}!CreateRotation@{CreateRotation}}
+\index{CreateRotation@{CreateRotation}!vlk::Matrix4@{vlk::Matrix4}}
+\doxysubsubsection{\texorpdfstring{CreateRotation()}{CreateRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$\mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}}$>$ vlk\+::\+Matrix4\+::\+Create\+Rotation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ Float $>$}]{angle,  }\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} $>$}]{axis }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Creates a matrix representing a rotation of {\ttfamily angle} radians around the normalized axis {\ttfamily axis} 
+
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classvlk_1_1Matrix4_a0d25834cbd2ca6a71f679bc0f983ac9d}\label{classvlk_1_1Matrix4_a0d25834cbd2ca6a71f679bc0f983ac9d}} 
+\index{vlk::Matrix4@{vlk::Matrix4}!CreateRotation@{CreateRotation}}
+\index{CreateRotation@{CreateRotation}!vlk::Matrix4@{vlk::Matrix4}}
+\doxysubsubsection{\texorpdfstring{CreateRotation()}{CreateRotation()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$\mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}}$>$ vlk\+::\+Matrix4\+::\+Create\+Rotation (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} $>$}]{euler }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Creates a matrix representing a rotation equivelant to the given euler axis values. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em euler} & A \mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} where every element represents the number of radians to turn around the respective axis.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classvlk_1_1Matrix4_a7845a17fcce9a9ae659cb400bc22fcba}\label{classvlk_1_1Matrix4_a7845a17fcce9a9ae659cb400bc22fcba}} 
+\index{vlk::Matrix4@{vlk::Matrix4}!CreateRotationX@{CreateRotationX}}
+\index{CreateRotationX@{CreateRotationX}!vlk::Matrix4@{vlk::Matrix4}}
+\doxysubsubsection{\texorpdfstring{CreateRotationX()}{CreateRotationX()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$\mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}}$>$ vlk\+::\+Matrix4\+::\+Create\+RotationX (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ Float $>$}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Creates a matrix representing a rotation of {\ttfamily angle} radians around the X-\/axis. 
+
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classvlk_1_1Matrix4_a073cd892d7e4597e0b0b8330dfb399c3}\label{classvlk_1_1Matrix4_a073cd892d7e4597e0b0b8330dfb399c3}} 
+\index{vlk::Matrix4@{vlk::Matrix4}!CreateRotationY@{CreateRotationY}}
+\index{CreateRotationY@{CreateRotationY}!vlk::Matrix4@{vlk::Matrix4}}
+\doxysubsubsection{\texorpdfstring{CreateRotationY()}{CreateRotationY()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$\mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}}$>$ vlk\+::\+Matrix4\+::\+Create\+RotationY (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ Float $>$}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Creates a matrix representing a rotation of {\ttfamily angle} radians around the Y-\/axis. 
+
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classvlk_1_1Matrix4_a5ecfbc34b545d4b8a07b06ce506a60c2}\label{classvlk_1_1Matrix4_a5ecfbc34b545d4b8a07b06ce506a60c2}} 
+\index{vlk::Matrix4@{vlk::Matrix4}!CreateRotationZ@{CreateRotationZ}}
+\index{CreateRotationZ@{CreateRotationZ}!vlk::Matrix4@{vlk::Matrix4}}
+\doxysubsubsection{\texorpdfstring{CreateRotationZ()}{CreateRotationZ()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$\mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}}$>$ vlk\+::\+Matrix4\+::\+Create\+RotationZ (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ Float $>$}]{angle }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Creates a matrix representing a rotation of {\ttfamily angle} radians around the Z-\/axis. 
+
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classvlk_1_1Matrix4_a9baf79cb59f04edb8037703bf0fca922}\label{classvlk_1_1Matrix4_a9baf79cb59f04edb8037703bf0fca922}} 
+\index{vlk::Matrix4@{vlk::Matrix4}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!vlk::Matrix4@{vlk::Matrix4}}
+\doxysubsubsection{\texorpdfstring{operator$\ast$()}{operator*()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} vlk\+::\+Matrix4\+::operator$\ast$ (\begin{DoxyParamCaption}\item[{const Float}]{f }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Performs a scalar multiplication to every cell of a matrix. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{m = m * 3.0f;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//  Before:               After:}}
+\DoxyCodeLine{\textcolor{comment}{//  |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|     |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|}}
+\DoxyCodeLine{\textcolor{comment}{//  |1.0|0.0|0.0|0.0|     |3.0|0.0|0.0|0.0|}}
+\DoxyCodeLine{\textcolor{comment}{//  |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|     |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|}}
+\DoxyCodeLine{\textcolor{comment}{//  |0.0|1.0|0.0|0.0|     |0.0|3.0|0.0|0.0|}}
+\DoxyCodeLine{\textcolor{comment}{//  |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/| -\/>  |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|}}
+\DoxyCodeLine{\textcolor{comment}{//  |0.0|0.0|1.0|0.0|     |0.0|0.0|3.0|0.0|}}
+\DoxyCodeLine{\textcolor{comment}{//  |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|     |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|}}
+\DoxyCodeLine{\textcolor{comment}{//  |0.0|0.0|0.0|1.0|     |0.0|0.0|0.0|3.0|}}
+\DoxyCodeLine{\textcolor{comment}{//  |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|     |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|}}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{classvlk_1_1Matrix4_af6b64b237d37467b2e170c53d3153e75}\label{classvlk_1_1Matrix4_af6b64b237d37467b2e170c53d3153e75}} 
+\index{vlk::Matrix4@{vlk::Matrix4}!operator+@{operator+}}
+\index{operator+@{operator+}!vlk::Matrix4@{vlk::Matrix4}}
+\doxysubsubsection{\texorpdfstring{operator+()}{operator+()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} vlk\+::\+Matrix4\+::operator+ (\begin{DoxyParamCaption}\item[{const Float}]{f }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Performs an addition to every cell of a matrix. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{m = m + 3.0f;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//  Before:               After:}}
+\DoxyCodeLine{\textcolor{comment}{//  |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|     |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|}}
+\DoxyCodeLine{\textcolor{comment}{//  |1.0|0.0|0.0|0.0|     |4.0|3.0|3.0|3.0|}}
+\DoxyCodeLine{\textcolor{comment}{//  |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|     |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|}}
+\DoxyCodeLine{\textcolor{comment}{//  |0.0|1.0|0.0|0.0|     |3.0|4.0|3.0|3.0|}}
+\DoxyCodeLine{\textcolor{comment}{//  |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/| -\/>  |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|}}
+\DoxyCodeLine{\textcolor{comment}{//  |0.0|0.0|1.0|0.0|     |3.0|3.0|4.0|3.0|}}
+\DoxyCodeLine{\textcolor{comment}{//  |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|     |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|}}
+\DoxyCodeLine{\textcolor{comment}{//  |0.0|0.0|0.0|1.0|     |3.0|3.0|3.0|4.0|}}
+\DoxyCodeLine{\textcolor{comment}{//  |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|     |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|}}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{classvlk_1_1Matrix4_aa9a2d0099ebeccedaaf85d01ae5807f4}\label{classvlk_1_1Matrix4_aa9a2d0099ebeccedaaf85d01ae5807f4}} 
+\index{vlk::Matrix4@{vlk::Matrix4}!operator-\/@{operator-\/}}
+\index{operator-\/@{operator-\/}!vlk::Matrix4@{vlk::Matrix4}}
+\doxysubsubsection{\texorpdfstring{operator-\/()}{operator-()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} vlk\+::\+Matrix4\+::operator-\/ (\begin{DoxyParamCaption}\item[{const Float}]{f }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Performs a subtraction to every cell of a matrix. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{m = m -\/ 3.0f;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//  Before:               After:}}
+\DoxyCodeLine{\textcolor{comment}{//  |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|     |-\/-\/-\/-\/|-\/-\/-\/-\/|-\/-\/-\/-\/|-\/-\/-\/-\/|}}
+\DoxyCodeLine{\textcolor{comment}{//  |1.0|0.0|0.0|0.0|     |-\/2.0|-\/3.0|-\/3.0|-\/3.0|}}
+\DoxyCodeLine{\textcolor{comment}{//  |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|     |-\/-\/-\/-\/|-\/-\/-\/-\/|-\/-\/-\/-\/|-\/-\/-\/-\/|}}
+\DoxyCodeLine{\textcolor{comment}{//  |0.0|1.0|0.0|0.0|     |-\/3.0|-\/2.0|-\/3.0|-\/3.0|}}
+\DoxyCodeLine{\textcolor{comment}{//  |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/| -\/>  |-\/-\/-\/-\/|-\/-\/-\/-\/|-\/-\/-\/-\/|-\/-\/-\/-\/|}}
+\DoxyCodeLine{\textcolor{comment}{//  |0.0|0.0|1.0|0.0|     |-\/3.0|-\/3.0|-\/2.0|-\/3.0|}}
+\DoxyCodeLine{\textcolor{comment}{//  |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|     |-\/-\/-\/-\/|-\/-\/-\/-\/|-\/-\/-\/-\/|-\/-\/-\/-\/|}}
+\DoxyCodeLine{\textcolor{comment}{//  |0.0|0.0|0.0|1.0|     |-\/3.0|-\/3.0|-\/3.0|-\/2.0|}}
+\DoxyCodeLine{\textcolor{comment}{//  |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|     |-\/-\/-\/-\/|-\/-\/-\/-\/|-\/-\/-\/-\/|-\/-\/-\/-\/|}}
+
+\end{DoxyCode}
+ \mbox{\Hypertarget{classvlk_1_1Matrix4_ac8c3da2f7ef8479052f43ea099a384e4}\label{classvlk_1_1Matrix4_ac8c3da2f7ef8479052f43ea099a384e4}} 
+\index{vlk::Matrix4@{vlk::Matrix4}!operator/@{operator/}}
+\index{operator/@{operator/}!vlk::Matrix4@{vlk::Matrix4}}
+\doxysubsubsection{\texorpdfstring{operator/()}{operator/()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} vlk\+::\+Matrix4\+::operator/ (\begin{DoxyParamCaption}\item[{const Float}]{f }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Performs a scalar division to every cell of a matrix. 
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{m = m / 2.0f;}
+\DoxyCodeLine{}
+\DoxyCodeLine{\textcolor{comment}{//  Before:               After:}}
+\DoxyCodeLine{\textcolor{comment}{//  |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|     |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|}}
+\DoxyCodeLine{\textcolor{comment}{//  |1.0|0.0|0.0|0.0|     |0.5|0.0|0.0|0.0|}}
+\DoxyCodeLine{\textcolor{comment}{//  |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|     |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|}}
+\DoxyCodeLine{\textcolor{comment}{//  |0.0|1.0|0.0|0.0|     |0.0|0.5|0.0|0.0|}}
+\DoxyCodeLine{\textcolor{comment}{//  |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/| -\/>  |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|}}
+\DoxyCodeLine{\textcolor{comment}{//  |0.0|0.0|1.0|0.0|     |0.0|0.0|0.5|0.0|}}
+\DoxyCodeLine{\textcolor{comment}{//  |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|     |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|}}
+\DoxyCodeLine{\textcolor{comment}{//  |0.0|0.0|0.0|1.0|     |0.0|0.0|0.0|0.5|}}
+\DoxyCodeLine{\textcolor{comment}{//  |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|     |-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|-\/-\/-\/|}}
+
+\end{DoxyCode}
+ 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Valkyrie\+Engine\+Common/Matrix.\+hpp\end{DoxyCompactItemize}

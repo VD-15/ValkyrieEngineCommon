@@ -1,0 +1,7 @@
+meta_1=pass
+#comment line
+dummy data that should not be parsed.
+=no key
+no value=
+meta_2=third metadata value
+#meta_3=fail

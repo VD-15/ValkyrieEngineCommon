@@ -1,0 +1,199 @@
+\hypertarget{classvlk_1_1Vector2}{}\doxysection{vlk\+::Vector2 Class Reference}
+\label{classvlk_1_1Vector2}\index{vlk::Vector2@{vlk::Vector2}}
+
+
+2-\/dimensional vector class  
+
+
+
+
+{\ttfamily \#include $<$Vector.\+hpp$>$}
+
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static Float \mbox{\hyperlink{classvlk_1_1Vector2_a4a5bacdaa4adf1e938da1911a4169b76}{Length}} (const \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \&v)
+\begin{DoxyCompactList}\small\item\em Returns the length (magnitude) of a vector. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ Float $>$ \mbox{\hyperlink{classvlk_1_1Vector2_abf94e77cb4d6b73896f47f735cb7c559}{Length}} (\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$ v)
+\begin{DoxyCompactList}\small\item\em Returns the length (magnitude) of a vector. \end{DoxyCompactList}\item 
+static Float \mbox{\hyperlink{classvlk_1_1Vector2_a741d9451e835845d33c839b18c44423b}{Square\+Length}} (const \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \&v)
+\begin{DoxyCompactList}\small\item\em Returns the square length of this vector. Can be faster than calculating \mbox{\hyperlink{classvlk_1_1Vector2_a4a5bacdaa4adf1e938da1911a4169b76}{Length}}. If you\textquotesingle{}re just comparing the relative length of vectors and don\textquotesingle{}t need the actual magnitude, use this. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ Float $>$ \mbox{\hyperlink{classvlk_1_1Vector2_a106de8ad33b4828a85dbff595ae831ab}{Square\+Length}} (\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$ v)
+\begin{DoxyCompactList}\small\item\em Returns the square length of this vector. Can be faster than calculating \mbox{\hyperlink{classvlk_1_1Vector2_a4a5bacdaa4adf1e938da1911a4169b76}{Length}}. If you\textquotesingle{}re just comparing the relative length of vectors and don\textquotesingle{}t need the actual magnitude, use this. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Vector2_aef36382cf25c4a0a0916e485404cc327}\label{classvlk_1_1Vector2_aef36382cf25c4a0a0916e485404cc327}} 
+static \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \mbox{\hyperlink{classvlk_1_1Vector2_aef36382cf25c4a0a0916e485404cc327}{Normalized}} (const \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \&v)
+\begin{DoxyCompactList}\small\item\em Returns a unit vector with the same direction as {\ttfamily v}. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$ \mbox{\hyperlink{classvlk_1_1Vector2_ab9098ca554ab79ad515cee774896e705}{Normalized}} (\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$ v)
+\begin{DoxyCompactList}\small\item\em Returns a unit vector with the same direction as {\ttfamily v}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Vector2_a1e7eb4fc9740407e9be6a266a4053b76}\label{classvlk_1_1Vector2_a1e7eb4fc9740407e9be6a266a4053b76}} 
+static Float \mbox{\hyperlink{classvlk_1_1Vector2_a1e7eb4fc9740407e9be6a266a4053b76}{Distance}} (const \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \&lhs, const \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \&rhs)
+\begin{DoxyCompactList}\small\item\em Returns the distance between two vectors. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ Float $>$ \mbox{\hyperlink{classvlk_1_1Vector2_aa01fe23aac8bbe2a687f5fe2b9de11b7}{Distance}} (\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$ lhs, \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$ rhs)
+\begin{DoxyCompactList}\small\item\em Returns the distance between two vectors. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Vector2_adbed0e54b38565685b9c023675c3baf8}\label{classvlk_1_1Vector2_adbed0e54b38565685b9c023675c3baf8}} 
+static Float \mbox{\hyperlink{classvlk_1_1Vector2_adbed0e54b38565685b9c023675c3baf8}{Dot}} (const \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \&lhs, const \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \&rhs)
+\begin{DoxyCompactList}\small\item\em Returns the dot product of two vectors. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ Float $>$ \mbox{\hyperlink{classvlk_1_1Vector2_aaa196b84217d63628f5ffd11a96603fb}{Dot}} (\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$ lhs, \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$ rhs)
+\begin{DoxyCompactList}\small\item\em Returns the dot product of two vectors. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Vector2_a82d2e611c9a5dbc4bfa48cfea22cb1de}\label{classvlk_1_1Vector2_a82d2e611c9a5dbc4bfa48cfea22cb1de}} 
+static Float \mbox{\hyperlink{classvlk_1_1Vector2_a82d2e611c9a5dbc4bfa48cfea22cb1de}{Angle\+Between}} (const \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \&lhs, const \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \&rhs)
+\begin{DoxyCompactList}\small\item\em Returns the angle in radians between two vectors. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ Float $>$ \mbox{\hyperlink{classvlk_1_1Vector2_a58de64d8171260400abd63ebcc649118}{Angle\+Between}} (\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$ lhs, \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$ rhs)
+\begin{DoxyCompactList}\small\item\em Returns the angle in radians between two vectors. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Vector2_afb93a99d37f0929f13a83819fd52af6a}\label{classvlk_1_1Vector2_afb93a99d37f0929f13a83819fd52af6a}} 
+static \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \mbox{\hyperlink{classvlk_1_1Vector2_afb93a99d37f0929f13a83819fd52af6a}{Lerp}} (const \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \&start, const \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \&end, const Float t)
+\begin{DoxyCompactList}\small\item\em Linearly interpolates between two vectors. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$ \mbox{\hyperlink{classvlk_1_1Vector2_aa694bfbfe2cb3766451ccd32d8179d3e}{Lerp}} (\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$ start, \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$ end, \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ Float $>$ t)
+\begin{DoxyCompactList}\small\item\em Linearly interpolates between two vectors. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Vector2_aa16b6fe13b4dd29400bac09b0910f61e}\label{classvlk_1_1Vector2_aa16b6fe13b4dd29400bac09b0910f61e}} 
+static \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \mbox{\hyperlink{classvlk_1_1Vector2_aa16b6fe13b4dd29400bac09b0910f61e}{Perpendicular}} (const \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \&v)
+\begin{DoxyCompactList}\small\item\em Returns a vector perpendicular to {\ttfamily v}. \end{DoxyCompactList}\item 
+static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$ \mbox{\hyperlink{classvlk_1_1Vector2_af8155215b67a42ebd704fe8fadf47c75}{Perpendicular}} (\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$ v)
+\begin{DoxyCompactList}\small\item\em Returns a vector perpendicular to {\ttfamily v}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+2-\/dimensional vector class 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvlk_1_1Vector2_a58de64d8171260400abd63ebcc649118}\label{classvlk_1_1Vector2_a58de64d8171260400abd63ebcc649118}} 
+\index{vlk::Vector2@{vlk::Vector2}!AngleBetween@{AngleBetween}}
+\index{AngleBetween@{AngleBetween}!vlk::Vector2@{vlk::Vector2}}
+\doxysubsubsection{\texorpdfstring{AngleBetween()}{AngleBetween()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$Float$>$ vlk\+::\+Vector2\+::\+Angle\+Between (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$}]{lhs,  }\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the angle in radians between two vectors. 
+
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classvlk_1_1Vector2_aa01fe23aac8bbe2a687f5fe2b9de11b7}\label{classvlk_1_1Vector2_aa01fe23aac8bbe2a687f5fe2b9de11b7}} 
+\index{vlk::Vector2@{vlk::Vector2}!Distance@{Distance}}
+\index{Distance@{Distance}!vlk::Vector2@{vlk::Vector2}}
+\doxysubsubsection{\texorpdfstring{Distance()}{Distance()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$Float$>$ vlk\+::\+Vector2\+::\+Distance (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$}]{lhs,  }\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the distance between two vectors. 
+
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classvlk_1_1Vector2_aaa196b84217d63628f5ffd11a96603fb}\label{classvlk_1_1Vector2_aaa196b84217d63628f5ffd11a96603fb}} 
+\index{vlk::Vector2@{vlk::Vector2}!Dot@{Dot}}
+\index{Dot@{Dot}!vlk::Vector2@{vlk::Vector2}}
+\doxysubsubsection{\texorpdfstring{Dot()}{Dot()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$Float$>$ vlk\+::\+Vector2\+::\+Dot (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$}]{lhs,  }\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$}]{rhs }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the dot product of two vectors. 
+
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classvlk_1_1Vector2_a4a5bacdaa4adf1e938da1911a4169b76}\label{classvlk_1_1Vector2_a4a5bacdaa4adf1e938da1911a4169b76}} 
+\index{vlk::Vector2@{vlk::Vector2}!Length@{Length}}
+\index{Length@{Length}!vlk::Vector2@{vlk::Vector2}}
+\doxysubsubsection{\texorpdfstring{Length()}{Length()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static Float vlk\+::\+Vector2\+::\+Length (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the length (magnitude) of a vector. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classvlk_1_1Vector2_a741d9451e835845d33c839b18c44423b}{Square\+Length}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classvlk_1_1Vector2_abf94e77cb4d6b73896f47f735cb7c559}\label{classvlk_1_1Vector2_abf94e77cb4d6b73896f47f735cb7c559}} 
+\index{vlk::Vector2@{vlk::Vector2}!Length@{Length}}
+\index{Length@{Length}!vlk::Vector2@{vlk::Vector2}}
+\doxysubsubsection{\texorpdfstring{Length()}{Length()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$Float$>$ vlk\+::\+Vector2\+::\+Length (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the length (magnitude) of a vector. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classvlk_1_1Vector2_a741d9451e835845d33c839b18c44423b}{Square\+Length}}
+\end{DoxySeeAlso}
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classvlk_1_1Vector2_aa694bfbfe2cb3766451ccd32d8179d3e}\label{classvlk_1_1Vector2_aa694bfbfe2cb3766451ccd32d8179d3e}} 
+\index{vlk::Vector2@{vlk::Vector2}!Lerp@{Lerp}}
+\index{Lerp@{Lerp}!vlk::Vector2@{vlk::Vector2}}
+\doxysubsubsection{\texorpdfstring{Lerp()}{Lerp()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$\mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}}$>$ vlk\+::\+Vector2\+::\+Lerp (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$}]{start,  }\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$}]{end,  }\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ Float $>$}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Linearly interpolates between two vectors. 
+
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classvlk_1_1Vector2_ab9098ca554ab79ad515cee774896e705}\label{classvlk_1_1Vector2_ab9098ca554ab79ad515cee774896e705}} 
+\index{vlk::Vector2@{vlk::Vector2}!Normalized@{Normalized}}
+\index{Normalized@{Normalized}!vlk::Vector2@{vlk::Vector2}}
+\doxysubsubsection{\texorpdfstring{Normalized()}{Normalized()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$\mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}}$>$ vlk\+::\+Vector2\+::\+Normalized (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns a unit vector with the same direction as {\ttfamily v}. 
+
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classvlk_1_1Vector2_af8155215b67a42ebd704fe8fadf47c75}\label{classvlk_1_1Vector2_af8155215b67a42ebd704fe8fadf47c75}} 
+\index{vlk::Vector2@{vlk::Vector2}!Perpendicular@{Perpendicular}}
+\index{Perpendicular@{Perpendicular}!vlk::Vector2@{vlk::Vector2}}
+\doxysubsubsection{\texorpdfstring{Perpendicular()}{Perpendicular()}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$\mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}}$>$ vlk\+::\+Vector2\+::\+Perpendicular (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns a vector perpendicular to {\ttfamily v}. 
+
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{classvlk_1_1Vector2_a741d9451e835845d33c839b18c44423b}\label{classvlk_1_1Vector2_a741d9451e835845d33c839b18c44423b}} 
+\index{vlk::Vector2@{vlk::Vector2}!SquareLength@{SquareLength}}
+\index{SquareLength@{SquareLength}!vlk::Vector2@{vlk::Vector2}}
+\doxysubsubsection{\texorpdfstring{SquareLength()}{SquareLength()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static Float vlk\+::\+Vector2\+::\+Square\+Length (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the square length of this vector. Can be faster than calculating \mbox{\hyperlink{classvlk_1_1Vector2_a4a5bacdaa4adf1e938da1911a4169b76}{Length}}. If you\textquotesingle{}re just comparing the relative length of vectors and don\textquotesingle{}t need the actual magnitude, use this. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classvlk_1_1Vector2_a4a5bacdaa4adf1e938da1911a4169b76}{Length}} 
+\end{DoxySeeAlso}
+\mbox{\Hypertarget{classvlk_1_1Vector2_a106de8ad33b4828a85dbff595ae831ab}\label{classvlk_1_1Vector2_a106de8ad33b4828a85dbff595ae831ab}} 
+\index{vlk::Vector2@{vlk::Vector2}!SquareLength@{SquareLength}}
+\index{SquareLength@{SquareLength}!vlk::Vector2@{vlk::Vector2}}
+\doxysubsubsection{\texorpdfstring{SquareLength()}{SquareLength()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$Float$>$ vlk\+::\+Vector2\+::\+Square\+Length (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns the square length of this vector. Can be faster than calculating \mbox{\hyperlink{classvlk_1_1Vector2_a4a5bacdaa4adf1e938da1911a4169b76}{Length}}. If you\textquotesingle{}re just comparing the relative length of vectors and don\textquotesingle{}t need the actual magnitude, use this. 
+
+\begin{DoxySeeAlso}{See also}
+\mbox{\hyperlink{classvlk_1_1Vector2_a4a5bacdaa4adf1e938da1911a4169b76}{Length}}
+\end{DoxySeeAlso}
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Valkyrie\+Engine\+Common/Vector.\+hpp\end{DoxyCompactItemize}

@@ -1,9 +1,17 @@
 [submodule "deps/ValkyrieEngineCore"]
 	path = deps/ValkyrieEngineCore
 	url = https://github.com/VD-15/ValkyrieEngineCore
-[submodule "deps/static_math"]
-	path = deps/static_math
-	url = https://github.com/Morwenn/static_math
+	branch = master
 [submodule "deps/Catch2"]
 	path = deps/Catch2
 	url = https://github.com/catchorg/Catch2
+	branch = v2.x
+[submodule "deps/glm"]
+	path = deps/glm
+	url = https://github.com/g-truc/glm
+[submodule "deps/Sprout"]
+	path = deps/Sprout
+	url = https://github.com/VD-15/Sprout
+[submodule "deps/gcem"]
+	path = deps/gcem
+	url = https://github.com/kthohr/gcem

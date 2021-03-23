@@ -1,0 +1,4 @@
+!version=1 
+meta_1=pass
+meta_2=repeat metadata value
+#meta_3=fail

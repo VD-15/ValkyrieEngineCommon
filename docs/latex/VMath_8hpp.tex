@@ -1,0 +1,607 @@
+\hypertarget{VMath_8hpp}{}\doxysection{include/\+Valkyrie\+Engine\+Common/\+VMath.hpp File Reference}
+\label{VMath_8hpp}\index{include/ValkyrieEngineCommon/VMath.hpp@{include/ValkyrieEngineCommon/VMath.hpp}}
+
+
+Provides constexpr overloads of normal cmath functions.  
+
+
+{\ttfamily \#include \char`\"{}Valkyrie\+Engine/\+Valkyrie\+Defs.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Valkyrie\+Engine\+Common/\+Constexpr\+Wrapper.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}gcem.\+hpp\char`\"{}}\newline
+{\ttfamily \#include $<$type\+\_\+traits$>$}\newline
+{\ttfamily \#include $<$cmath$>$}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \mbox{\hyperlink{VMath_8hpp_a92a63252b4446c28f88539ffb73a0469}{vlk\+::\+Sign}} (T t)
+\begin{DoxyCompactList}\small\item\em Gets the sign of value {\ttfamily t} \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\F \mbox{\hyperlink{VMath_8hpp_a28eeac1d5949f083884de22c76ad1570}{vlk\+::\+Sin}} (F f)
+\begin{DoxyCompactList}\small\item\em Returns the sine of an angle. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\Constexpr\+Wrapper$<$ F $>$ \mbox{\hyperlink{VMath_8hpp_a8347a76a60e1e9863f120e66c692b553}{vlk\+::\+Sin}} (Constexpr\+Wrapper$<$ F $>$ f)
+\begin{DoxyCompactList}\small\item\em Returns the sine of an angle. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\F \mbox{\hyperlink{VMath_8hpp_aa0c612632e615f6cf4d3ce3eb6393de1}{vlk\+::\+Cos}} (F f)
+\begin{DoxyCompactList}\small\item\em Returns the cosine of an angle. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\Constexpr\+Wrapper$<$ F $>$ \mbox{\hyperlink{VMath_8hpp_a24fcf1a1d198b0d3e0ffd6aee0600839}{vlk\+::\+Cos}} (Constexpr\+Wrapper$<$ F $>$ f)
+\begin{DoxyCompactList}\small\item\em Returns the cosine of an angle. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\F \mbox{\hyperlink{VMath_8hpp_abc96f604f4b5caa667095a2f359bb330}{vlk\+::\+Tan}} (F f)
+\begin{DoxyCompactList}\small\item\em Returns the tangent of an angle. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\Constexpr\+Wrapper$<$ F $>$ \mbox{\hyperlink{VMath_8hpp_a690e849c75f1d1d965e9e1ddeef75d5d}{vlk\+::\+Tan}} (Constexpr\+Wrapper$<$ F $>$ f)
+\begin{DoxyCompactList}\small\item\em Returns the tangent of an angle. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\F \mbox{\hyperlink{VMath_8hpp_a136ab90927199972758ead34aef020fa}{vlk\+::\+ASin}} (F f)
+\begin{DoxyCompactList}\small\item\em Returns the arc sine of a value. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\Constexpr\+Wrapper$<$ F $>$ \mbox{\hyperlink{VMath_8hpp_a856597b1c976771ad275e727a0dae27f}{vlk\+::\+ASin}} (Constexpr\+Wrapper$<$ F $>$ f)
+\begin{DoxyCompactList}\small\item\em Returns the arc sine of a value. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\F \mbox{\hyperlink{VMath_8hpp_a0168845d1e6233efb16f99534ada1c53}{vlk\+::\+ACos}} (F f)
+\begin{DoxyCompactList}\small\item\em Returns the arc cosine of a value. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\Constexpr\+Wrapper$<$ F $>$ \mbox{\hyperlink{VMath_8hpp_a553f0e2d02ad446ede00a96626a49503}{vlk\+::\+ACos}} (Constexpr\+Wrapper$<$ F $>$ f)
+\begin{DoxyCompactList}\small\item\em Returns the arc cosine of a value. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\F \mbox{\hyperlink{VMath_8hpp_a08dcc87932f790f315d87563730e9d7a}{vlk\+::\+ATan}} (F f)
+\begin{DoxyCompactList}\small\item\em Returns the arc tangent of a value. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\Constexpr\+Wrapper$<$ F $>$ \mbox{\hyperlink{VMath_8hpp_ae02f466201af4889bec504e88b503569}{vlk\+::\+ATan}} (Constexpr\+Wrapper$<$ F $>$ f)
+\begin{DoxyCompactList}\small\item\em Returns the arc tangent of a value. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\F \mbox{\hyperlink{VMath_8hpp_a8a7ad6b70382bfdbd950393160e8d823}{vlk\+::\+ATan2}} (F x, F y)
+\begin{DoxyCompactList}\small\item\em Returns the arc tangent of a coordinate measured from the origin. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\Constexpr\+Wrapper$<$ F $>$ \mbox{\hyperlink{VMath_8hpp_a0c6f9b74c6a8dde3813ee205dae4fcdc}{vlk\+::\+ATan2}} (Constexpr\+Wrapper$<$ F $>$ x, Constexpr\+Wrapper$<$ F $>$ y)
+\begin{DoxyCompactList}\small\item\em Returns the arc tangent of a coordinate measured from the origin. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\F \mbox{\hyperlink{VMath_8hpp_aa8f8ae43370a5410170a208a9a85f31e}{vlk\+::\+Sqrt}} (F f)
+\begin{DoxyCompactList}\small\item\em Returns the square root of a number. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\Constexpr\+Wrapper$<$ F $>$ \mbox{\hyperlink{VMath_8hpp_a4625dbd7e2ce901d885b93cec10e946c}{vlk\+::\+Sqrt}} (Constexpr\+Wrapper$<$ F $>$ f)
+\begin{DoxyCompactList}\small\item\em Returns the square root of a number. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\F \mbox{\hyperlink{VMath_8hpp_a335564315e97a09761f3ee57b0e2293f}{vlk\+::\+Pow}} (F f, F e)
+\begin{DoxyCompactList}\small\item\em Returns the value of f raised to the power of e. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\Constexpr\+Wrapper$<$ F $>$ \mbox{\hyperlink{VMath_8hpp_a733c7e30c416779d9cddfc1546d19501}{vlk\+::\+Pow}} (Constexpr\+Wrapper$<$ F $>$ f, Constexpr\+Wrapper$<$ F $>$ e)
+\begin{DoxyCompactList}\small\item\em Returns the value of f raised to the power of e. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\F \mbox{\hyperlink{VMath_8hpp_ae0dec78957b9c557765f0c00dfcc79a7}{vlk\+::\+FMod}} (F a, F b)
+\begin{DoxyCompactList}\small\item\em Returns the modulo of two floating point numbers. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\Constexpr\+Wrapper$<$ F $>$ \mbox{\hyperlink{VMath_8hpp_a1a4e7a17911e6fbb0b1f84928f6e82ec}{vlk\+::\+FMod}} (Constexpr\+Wrapper$<$ F $>$ a, Constexpr\+Wrapper$<$ F $>$ b)
+\begin{DoxyCompactList}\small\item\em Returns the modulo of two floating point numbers. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\F \mbox{\hyperlink{VMath_8hpp_aad50a7663e8544c5cef457e627dd6049}{vlk\+::\+Ceil}} (F f)
+\begin{DoxyCompactList}\small\item\em Returns the ceiling of a floating point number. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\Constexpr\+Wrapper$<$ F $>$ \mbox{\hyperlink{VMath_8hpp_a4d41b7b16cbcfe9e8262d814560ea81a}{vlk\+::\+Ceil}} (Constexpr\+Wrapper$<$ F $>$ f)
+\begin{DoxyCompactList}\small\item\em Returns the ceiling of a floating point number. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\F \mbox{\hyperlink{VMath_8hpp_ac8356ae34f7b549c5f8194c11166590b}{vlk\+::\+Floor}} (F f)
+\begin{DoxyCompactList}\small\item\em Returns the floor of a floating point number. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\Constexpr\+Wrapper$<$ F $>$ \mbox{\hyperlink{VMath_8hpp_a2e6dacbcd00bd35c760245a76a905216}{vlk\+::\+Floor}} (Constexpr\+Wrapper$<$ F $>$ f)
+\begin{DoxyCompactList}\small\item\em Returns the floor of a floating point number. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{VMath_8hpp_a32fdccc5ebf420d0c9d4e0ef8ce43a0b}\label{VMath_8hpp_a32fdccc5ebf420d0c9d4e0ef8ce43a0b}} 
+{\footnotesize template$<$typename F $>$ }\\F \mbox{\hyperlink{VMath_8hpp_a32fdccc5ebf420d0c9d4e0ef8ce43a0b}{vlk\+::\+Trunc}} (F f)
+\begin{DoxyCompactList}\small\item\em Returns the truncation of a floating point number. Rounds towards zero to the nearest whole number. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\Constexpr\+Wrapper$<$ F $>$ \mbox{\hyperlink{VMath_8hpp_ae661c61643f8ca5612c782813d6fdd97}{vlk\+::\+Trunc}} (Constexpr\+Wrapper$<$ F $>$ f)
+\begin{DoxyCompactList}\small\item\em Returns the truncation of a floating point number. Rounds towards zero to the nearest whole number. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{VMath_8hpp_a3524a4478412ee4941c3a01fbf50b897}\label{VMath_8hpp_a3524a4478412ee4941c3a01fbf50b897}} 
+{\footnotesize template$<$typename F $>$ }\\F \mbox{\hyperlink{VMath_8hpp_a3524a4478412ee4941c3a01fbf50b897}{vlk\+::\+Round}} (F f)
+\begin{DoxyCompactList}\small\item\em Rounds a floating point to the nearest whole number. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\Constexpr\+Wrapper$<$ F $>$ \mbox{\hyperlink{VMath_8hpp_adb79470dbe112fad6ad28a11cb9fa2fb}{vlk\+::\+Round}} (Constexpr\+Wrapper$<$ F $>$ f)
+\begin{DoxyCompactList}\small\item\em Rounds a floating point to the nearest whole number. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{VMath_8hpp_accfe67331ae768fbd5942658a050d9d5}\label{VMath_8hpp_accfe67331ae768fbd5942658a050d9d5}} 
+{\footnotesize template$<$typename F $>$ }\\F \mbox{\hyperlink{VMath_8hpp_accfe67331ae768fbd5942658a050d9d5}{vlk\+::\+Abs}} (F f)
+\begin{DoxyCompactList}\small\item\em Returns the magnitude of a floating point number. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename F $>$ }\\Constexpr\+Wrapper$<$ F $>$ \mbox{\hyperlink{VMath_8hpp_a3fae87dd6cc8fbd7a1747a9260141311}{vlk\+::\+Abs}} (Constexpr\+Wrapper$<$ F $>$ f)
+\begin{DoxyCompactList}\small\item\em Returns the magnitude of a floating point number. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Provides constexpr overloads of normal cmath functions. 
+
+Constexpr-\/compatible functions incur a significant performance penalty at runtime compared to cmath functions and use outside of purely-\/constexpr environments is stringly discouraged. Constexpr overloads may be accessed by wrapping each argument in a vlk\+::\+Constexpr\+Wrapper$<$\+T$>$ with use of vlk\+::\+Force\+CXPR$<$\+T$>$(\+T).
+
+Constexpr-\/compatible overloads attempt to emulate their cmath equivelants as closely as possible, but some are known to suffer from accuracy issues in certain scenarios and others may not work at all. These conditions, will be highlighted as a warning in the documentation of functions that suffer from them. 
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{VMath_8hpp_a3fae87dd6cc8fbd7a1747a9260141311}\label{VMath_8hpp_a3fae87dd6cc8fbd7a1747a9260141311}} 
+\index{VMath.hpp@{VMath.hpp}!Abs@{Abs}}
+\index{Abs@{Abs}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{Abs()}{Abs()}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+Constexpr\+Wrapper$<$F$>$ vlk\+::\+Abs (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ F $>$}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the magnitude of a floating point number. 
+
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{VMath_8hpp_a553f0e2d02ad446ede00a96626a49503}\label{VMath_8hpp_a553f0e2d02ad446ede00a96626a49503}} 
+\index{VMath.hpp@{VMath.hpp}!ACos@{ACos}}
+\index{ACos@{ACos}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{ACos()}{ACos()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+Constexpr\+Wrapper$<$F$>$ vlk\+::\+ACos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ F $>$}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the arc cosine of a value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & An value in the range of \mbox{[}-\/1.\+0, 1.\+0\mbox{]}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An angle, given in radians.
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{VMath_8hpp_a0168845d1e6233efb16f99534ada1c53}\label{VMath_8hpp_a0168845d1e6233efb16f99534ada1c53}} 
+\index{VMath.hpp@{VMath.hpp}!ACos@{ACos}}
+\index{ACos@{ACos}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{ACos()}{ACos()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+F vlk\+::\+ACos (\begin{DoxyParamCaption}\item[{F}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the arc cosine of a value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & An value in the range of \mbox{[}-\/1.\+0, 1.\+0\mbox{]}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An angle, given in radians. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{VMath_8hpp_a856597b1c976771ad275e727a0dae27f}\label{VMath_8hpp_a856597b1c976771ad275e727a0dae27f}} 
+\index{VMath.hpp@{VMath.hpp}!ASin@{ASin}}
+\index{ASin@{ASin}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{ASin()}{ASin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+Constexpr\+Wrapper$<$F$>$ vlk\+::\+ASin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ F $>$}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the arc sine of a value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & An value in the range of \mbox{[}-\/1.\+0, 1.\+0\mbox{]}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An angle, given in radians.
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{VMath_8hpp_a136ab90927199972758ead34aef020fa}\label{VMath_8hpp_a136ab90927199972758ead34aef020fa}} 
+\index{VMath.hpp@{VMath.hpp}!ASin@{ASin}}
+\index{ASin@{ASin}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{ASin()}{ASin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+F vlk\+::\+ASin (\begin{DoxyParamCaption}\item[{F}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the arc sine of a value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & An value in the range of \mbox{[}-\/1.\+0, 1.\+0\mbox{]}.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An angle, given in radians. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{VMath_8hpp_ae02f466201af4889bec504e88b503569}\label{VMath_8hpp_ae02f466201af4889bec504e88b503569}} 
+\index{VMath.hpp@{VMath.hpp}!ATan@{ATan}}
+\index{ATan@{ATan}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{ATan()}{ATan()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+Constexpr\+Wrapper$<$F$>$ vlk\+::\+ATan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ F $>$}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the arc tangent of a value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & An value in the range of \mbox{[}-\/1.\+0, 1.\+0\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An angle, given in radians
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{VMath_8hpp_a08dcc87932f790f315d87563730e9d7a}\label{VMath_8hpp_a08dcc87932f790f315d87563730e9d7a}} 
+\index{VMath.hpp@{VMath.hpp}!ATan@{ATan}}
+\index{ATan@{ATan}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{ATan()}{ATan()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+F vlk\+::\+ATan (\begin{DoxyParamCaption}\item[{F}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the arc tangent of a value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & An value in the range of \mbox{[}-\/1.\+0, 1.\+0\mbox{]} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An angle, given in radians 
+\end{DoxyReturn}
+\mbox{\Hypertarget{VMath_8hpp_a0c6f9b74c6a8dde3813ee205dae4fcdc}\label{VMath_8hpp_a0c6f9b74c6a8dde3813ee205dae4fcdc}} 
+\index{VMath.hpp@{VMath.hpp}!ATan2@{ATan2}}
+\index{ATan2@{ATan2}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{ATan2()}{ATan2()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+Constexpr\+Wrapper$<$F$>$ vlk\+::\+ATan2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ F $>$}]{x,  }\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ F $>$}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the arc tangent of a coordinate measured from the origin. 
+
+Often used to calculate the angle between a vector and the x-\/axis, measured from the origin.
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & the y-\/coordinate of the point \\
+\hline
+{\em x} & The x-\/coordinate of the point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An angle, given in radians
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{VMath_8hpp_a8a7ad6b70382bfdbd950393160e8d823}\label{VMath_8hpp_a8a7ad6b70382bfdbd950393160e8d823}} 
+\index{VMath.hpp@{VMath.hpp}!ATan2@{ATan2}}
+\index{ATan2@{ATan2}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{ATan2()}{ATan2()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+F vlk\+::\+ATan2 (\begin{DoxyParamCaption}\item[{F}]{x,  }\item[{F}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the arc tangent of a coordinate measured from the origin. 
+
+Often used to calculate the angle between a vector and the x-\/axis, measured from the origin.
+
+
+\begin{DoxyParams}{Parameters}
+{\em y} & the y-\/coordinate of the point \\
+\hline
+{\em x} & The x-\/coordinate of the point \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+An angle, given in radians 
+\end{DoxyReturn}
+\mbox{\Hypertarget{VMath_8hpp_a4d41b7b16cbcfe9e8262d814560ea81a}\label{VMath_8hpp_a4d41b7b16cbcfe9e8262d814560ea81a}} 
+\index{VMath.hpp@{VMath.hpp}!Ceil@{Ceil}}
+\index{Ceil@{Ceil}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{Ceil()}{Ceil()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+Constexpr\+Wrapper$<$F$>$ vlk\+::\+Ceil (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ F $>$}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the ceiling of a floating point number. 
+
+Rounds up to the nearest whole number.
+
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{VMath_8hpp_aad50a7663e8544c5cef457e627dd6049}\label{VMath_8hpp_aad50a7663e8544c5cef457e627dd6049}} 
+\index{VMath.hpp@{VMath.hpp}!Ceil@{Ceil}}
+\index{Ceil@{Ceil}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{Ceil()}{Ceil()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+F vlk\+::\+Ceil (\begin{DoxyParamCaption}\item[{F}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the ceiling of a floating point number. 
+
+Rounds up to the nearest whole number. \mbox{\Hypertarget{VMath_8hpp_a24fcf1a1d198b0d3e0ffd6aee0600839}\label{VMath_8hpp_a24fcf1a1d198b0d3e0ffd6aee0600839}} 
+\index{VMath.hpp@{VMath.hpp}!Cos@{Cos}}
+\index{Cos@{Cos}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{Cos()}{Cos()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+Constexpr\+Wrapper$<$F$>$ vlk\+::\+Cos (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ F $>$}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the cosine of an angle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & An angle, measured in radians.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cosine of f.
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. No not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{VMath_8hpp_aa0c612632e615f6cf4d3ce3eb6393de1}\label{VMath_8hpp_aa0c612632e615f6cf4d3ce3eb6393de1}} 
+\index{VMath.hpp@{VMath.hpp}!Cos@{Cos}}
+\index{Cos@{Cos}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{Cos()}{Cos()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+F vlk\+::\+Cos (\begin{DoxyParamCaption}\item[{F}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the cosine of an angle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & An angle, measured in radians.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The cosine of f. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{VMath_8hpp_a2e6dacbcd00bd35c760245a76a905216}\label{VMath_8hpp_a2e6dacbcd00bd35c760245a76a905216}} 
+\index{VMath.hpp@{VMath.hpp}!Floor@{Floor}}
+\index{Floor@{Floor}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{Floor()}{Floor()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+Constexpr\+Wrapper$<$F$>$ vlk\+::\+Floor (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ F $>$}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the floor of a floating point number. 
+
+Rounds down to the nearest whole number.
+
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{VMath_8hpp_ac8356ae34f7b549c5f8194c11166590b}\label{VMath_8hpp_ac8356ae34f7b549c5f8194c11166590b}} 
+\index{VMath.hpp@{VMath.hpp}!Floor@{Floor}}
+\index{Floor@{Floor}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{Floor()}{Floor()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+F vlk\+::\+Floor (\begin{DoxyParamCaption}\item[{F}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the floor of a floating point number. 
+
+Rounds down to the nearest whole number. \mbox{\Hypertarget{VMath_8hpp_a1a4e7a17911e6fbb0b1f84928f6e82ec}\label{VMath_8hpp_a1a4e7a17911e6fbb0b1f84928f6e82ec}} 
+\index{VMath.hpp@{VMath.hpp}!FMod@{FMod}}
+\index{FMod@{FMod}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{FMod()}{FMod()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+Constexpr\+Wrapper$<$F$>$ vlk\+::\+FMod (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ F $>$}]{a,  }\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ F $>$}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the modulo of two floating point numbers. 
+
+Equivelant of \textquotesingle{}a \% b\textquotesingle{} for integers.
+
+\begin{DoxyWarning}{Warning}
+This overload gets increasingly inaccurate as {\ttfamily b} approaches zero.
+\end{DoxyWarning}
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{VMath_8hpp_ae0dec78957b9c557765f0c00dfcc79a7}\label{VMath_8hpp_ae0dec78957b9c557765f0c00dfcc79a7}} 
+\index{VMath.hpp@{VMath.hpp}!FMod@{FMod}}
+\index{FMod@{FMod}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{FMod()}{FMod()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+F vlk\+::\+FMod (\begin{DoxyParamCaption}\item[{F}]{a,  }\item[{F}]{b }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the modulo of two floating point numbers. 
+
+Equivelant of \textquotesingle{}a \% b\textquotesingle{} for integers. \mbox{\Hypertarget{VMath_8hpp_a733c7e30c416779d9cddfc1546d19501}\label{VMath_8hpp_a733c7e30c416779d9cddfc1546d19501}} 
+\index{VMath.hpp@{VMath.hpp}!Pow@{Pow}}
+\index{Pow@{Pow}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{Pow()}{Pow()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+Constexpr\+Wrapper$<$F$>$ vlk\+::\+Pow (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ F $>$}]{f,  }\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ F $>$}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the value of f raised to the power of e. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & A base floating point value \\
+\hline
+{\em e} & An exponent value\\
+\hline
+\end{DoxyParams}
+\begin{DoxyWarning}{Warning}
+This overload does not currently work correctly with negative values for {\ttfamily f} or {\ttfamily e}.
+\end{DoxyWarning}
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{VMath_8hpp_a335564315e97a09761f3ee57b0e2293f}\label{VMath_8hpp_a335564315e97a09761f3ee57b0e2293f}} 
+\index{VMath.hpp@{VMath.hpp}!Pow@{Pow}}
+\index{Pow@{Pow}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{Pow()}{Pow()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+F vlk\+::\+Pow (\begin{DoxyParamCaption}\item[{F}]{f,  }\item[{F}]{e }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the value of f raised to the power of e. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & A base floating point value \\
+\hline
+{\em e} & An exponent value \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{VMath_8hpp_adb79470dbe112fad6ad28a11cb9fa2fb}\label{VMath_8hpp_adb79470dbe112fad6ad28a11cb9fa2fb}} 
+\index{VMath.hpp@{VMath.hpp}!Round@{Round}}
+\index{Round@{Round}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{Round()}{Round()}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+Constexpr\+Wrapper$<$F$>$ vlk\+::\+Round (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ F $>$}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Rounds a floating point to the nearest whole number. 
+
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{VMath_8hpp_a92a63252b4446c28f88539ffb73a0469}\label{VMath_8hpp_a92a63252b4446c28f88539ffb73a0469}} 
+\index{VMath.hpp@{VMath.hpp}!Sign@{Sign}}
+\index{Sign@{Sign}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{Sign()}{Sign()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+T vlk\+::\+Sign (\begin{DoxyParamCaption}\item[{T}]{t }\end{DoxyParamCaption})}
+
+
+
+Gets the sign of value {\ttfamily t} 
+
+\begin{DoxyReturn}{Returns}
+-\/1 if {\ttfamily t} is lower than 0~\newline
+ 0 if {\ttfamily t} is equal to 0~\newline
+ 1 if {\ttfamily t} is greater than 0 
+\end{DoxyReturn}
+\mbox{\Hypertarget{VMath_8hpp_a8347a76a60e1e9863f120e66c692b553}\label{VMath_8hpp_a8347a76a60e1e9863f120e66c692b553}} 
+\index{VMath.hpp@{VMath.hpp}!Sin@{Sin}}
+\index{Sin@{Sin}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{Sin()}{Sin()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+Constexpr\+Wrapper$<$F$>$ vlk\+::\+Sin (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ F $>$}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the sine of an angle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & An angle, measured in radians.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The sine of f.
+\end{DoxyReturn}
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{VMath_8hpp_a28eeac1d5949f083884de22c76ad1570}\label{VMath_8hpp_a28eeac1d5949f083884de22c76ad1570}} 
+\index{VMath.hpp@{VMath.hpp}!Sin@{Sin}}
+\index{Sin@{Sin}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{Sin()}{Sin()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+F vlk\+::\+Sin (\begin{DoxyParamCaption}\item[{F}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the sine of an angle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & An angle, measured in radians.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The sine of f. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{VMath_8hpp_a4625dbd7e2ce901d885b93cec10e946c}\label{VMath_8hpp_a4625dbd7e2ce901d885b93cec10e946c}} 
+\index{VMath.hpp@{VMath.hpp}!Sqrt@{Sqrt}}
+\index{Sqrt@{Sqrt}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{Sqrt()}{Sqrt()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+Constexpr\+Wrapper$<$F$>$ vlk\+::\+Sqrt (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ F $>$}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the square root of a number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & a positive number\\
+\hline
+\end{DoxyParams}
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{VMath_8hpp_aa8f8ae43370a5410170a208a9a85f31e}\label{VMath_8hpp_aa8f8ae43370a5410170a208a9a85f31e}} 
+\index{VMath.hpp@{VMath.hpp}!Sqrt@{Sqrt}}
+\index{Sqrt@{Sqrt}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{Sqrt()}{Sqrt()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+F vlk\+::\+Sqrt (\begin{DoxyParamCaption}\item[{F}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the square root of a number. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & a positive number \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{VMath_8hpp_a690e849c75f1d1d965e9e1ddeef75d5d}\label{VMath_8hpp_a690e849c75f1d1d965e9e1ddeef75d5d}} 
+\index{VMath.hpp@{VMath.hpp}!Tan@{Tan}}
+\index{Tan@{Tan}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{Tan()}{Tan()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+Constexpr\+Wrapper$<$F$>$ vlk\+::\+Tan (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ F $>$}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the tangent of an angle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & An angle, measured in radians.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The tangent of f.
+\end{DoxyReturn}
+\begin{DoxyWarning}{Warning}
+This overload gets increasingly inaccurate as values of {\ttfamily f} approach the asymtote of the tan graph.
+\end{DoxyWarning}
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}
+\mbox{\Hypertarget{VMath_8hpp_abc96f604f4b5caa667095a2f359bb330}\label{VMath_8hpp_abc96f604f4b5caa667095a2f359bb330}} 
+\index{VMath.hpp@{VMath.hpp}!Tan@{Tan}}
+\index{Tan@{Tan}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{Tan()}{Tan()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+F vlk\+::\+Tan (\begin{DoxyParamCaption}\item[{F}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the tangent of an angle. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em f} & An angle, measured in radians.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The tangent of f. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{VMath_8hpp_ae661c61643f8ca5612c782813d6fdd97}\label{VMath_8hpp_ae661c61643f8ca5612c782813d6fdd97}} 
+\index{VMath.hpp@{VMath.hpp}!Trunc@{Trunc}}
+\index{Trunc@{Trunc}!VMath.hpp@{VMath.hpp}}
+\doxysubsubsection{\texorpdfstring{Trunc()}{Trunc()}}
+{\footnotesize\ttfamily template$<$typename F $>$ \\
+Constexpr\+Wrapper$<$F$>$ vlk\+::\+Trunc (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ F $>$}]{f }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the truncation of a floating point number. Rounds towards zero to the nearest whole number. 
+
+\begin{DoxyRemark}{Remarks}
+Constexpr-\/compatible overload. Do not use in runtime code. 
+\end{DoxyRemark}

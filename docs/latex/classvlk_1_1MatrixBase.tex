@@ -1,0 +1,47 @@
+\hypertarget{classvlk_1_1MatrixBase}{}\doxysection{vlk\+::Matrix\+Base$<$ N, M, Val $>$ Class Template Reference}
+\label{classvlk_1_1MatrixBase}\index{vlk::MatrixBase$<$ N, M, Val $>$@{vlk::MatrixBase$<$ N, M, Val $>$}}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvlk_1_1MatrixBase_ae4860a9a2ab0b37888e234cef47bdd23}\label{classvlk_1_1MatrixBase_ae4860a9a2ab0b37888e234cef47bdd23}} 
+{\footnotesize template$<$Size L$>$ }\\\mbox{\hyperlink{classvlk_1_1MatrixBase}{Matrix\+Base}}$<$ N, L, Val $>$ \mbox{\hyperlink{classvlk_1_1MatrixBase_ae4860a9a2ab0b37888e234cef47bdd23}{operator$\ast$}} (const \mbox{\hyperlink{classvlk_1_1MatrixBase}{Matrix\+Base}}$<$ M, L, Val $>$ \&rhs) const
+\begin{DoxyCompactList}\small\item\em Matrix-\/matrix multiplication. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1MatrixBase_a7f849ef51d06446f301141c91f384f6a}\label{classvlk_1_1MatrixBase_a7f849ef51d06446f301141c91f384f6a}} 
+\mbox{\hyperlink{classvlk_1_1VectorBase}{Col\+Type}} \mbox{\hyperlink{classvlk_1_1MatrixBase_a7f849ef51d06446f301141c91f384f6a}{operator$\ast$}} (const \mbox{\hyperlink{classvlk_1_1VectorBase}{Col\+Type}} \&rhs) const
+\begin{DoxyCompactList}\small\item\em Matrix-\/vector multiplication. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... , Size X = N, Size Y = M, std\+::enable\+\_\+if\+\_\+t$<$ X !=\+Y, Int $>$  = 0$>$ }\\Val \mbox{\hyperlink{classvlk_1_1MatrixBase_abc7f4d96b08860f8d4d5d4a20ea0beca}{Determinant}} () const
+\begin{DoxyCompactList}\small\item\em Returns the determinant of a matrix. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename... , Size X = N, Size Y = M, std\+::enable\+\_\+if\+\_\+t$<$ X !=\+Y, Int $>$  = 0$>$ }\\\mbox{\hyperlink{classvlk_1_1MatrixBase}{Self\+Type}} \mbox{\hyperlink{classvlk_1_1MatrixBase_a64e1550311aabc59a3017f38d5aff38e}{Inverse}} () const
+\begin{DoxyCompactList}\small\item\em Returns the inverse of a matrix such that {\ttfamily mat $\ast$ mat.\+Inverse()} is an identity matrix. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvlk_1_1MatrixBase_abc7f4d96b08860f8d4d5d4a20ea0beca}\label{classvlk_1_1MatrixBase_abc7f4d96b08860f8d4d5d4a20ea0beca}} 
+\index{vlk::MatrixBase$<$ N, M, Val $>$@{vlk::MatrixBase$<$ N, M, Val $>$}!Determinant@{Determinant}}
+\index{Determinant@{Determinant}!vlk::MatrixBase$<$ N, M, Val $>$@{vlk::MatrixBase$<$ N, M, Val $>$}}
+\doxysubsubsection{\texorpdfstring{Determinant()}{Determinant()}}
+{\footnotesize\ttfamily template$<$Size N, Size M, typename Val $>$ \\
+template$<$typename... , Size X = N, Size Y = M, std\+::enable\+\_\+if\+\_\+t$<$ X !=\+Y, Int $>$  = 0$>$ \\
+Val \mbox{\hyperlink{classvlk_1_1MatrixBase}{vlk\+::\+Matrix\+Base}}$<$ N, M, Val $>$\+::Determinant (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the determinant of a matrix. 
+
+Non-\/square matricies do not have a determinant defined and will return {\ttfamily NaN}. \mbox{\Hypertarget{classvlk_1_1MatrixBase_a64e1550311aabc59a3017f38d5aff38e}\label{classvlk_1_1MatrixBase_a64e1550311aabc59a3017f38d5aff38e}} 
+\index{vlk::MatrixBase$<$ N, M, Val $>$@{vlk::MatrixBase$<$ N, M, Val $>$}!Inverse@{Inverse}}
+\index{Inverse@{Inverse}!vlk::MatrixBase$<$ N, M, Val $>$@{vlk::MatrixBase$<$ N, M, Val $>$}}
+\doxysubsubsection{\texorpdfstring{Inverse()}{Inverse()}}
+{\footnotesize\ttfamily template$<$Size N, Size M, typename Val $>$ \\
+template$<$typename... , Size X = N, Size Y = M, std\+::enable\+\_\+if\+\_\+t$<$ X !=\+Y, Int $>$  = 0$>$ \\
+\mbox{\hyperlink{classvlk_1_1MatrixBase}{Self\+Type}} \mbox{\hyperlink{classvlk_1_1MatrixBase}{vlk\+::\+Matrix\+Base}}$<$ N, M, Val $>$\+::Inverse (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Returns the inverse of a matrix such that {\ttfamily mat $\ast$ mat.\+Inverse()} is an identity matrix. 
+
+Non-\/square matrices do not have an inverse and thus will return a NxM matrix of {\ttfamily NaN} values. 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Valkyrie\+Engine\+Common/Matrix.\+hpp\end{DoxyCompactItemize}

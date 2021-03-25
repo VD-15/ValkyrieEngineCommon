@@ -4,5 +4,6 @@
 #include "ValkyrieEngineCommon/Vector.hpp"
 #include "ValkyrieEngineCommon/Transform.hpp"
 #include "ValkyrieEngineCommon/Quaternion.hpp"
+#include "ValkyrieEngineCommon/Types.hpp"
 
 #endif

@@ -9,8 +9,26 @@ namespace vlk
 	class Area
 	{
 		public:
-		Point<T> size;
+
+		Area<T>(T x, T y, T width, T height) :
+			location(x, y),
+			size(width, height)
+		{ }
+
+		Area<T>(const Point<T>& _location, const Point<T>& _size) :
+			location(_location),
+			size(_size)
+		{ }
+
+		Area<T>() = default;
+		Area<T>(const Area&) = default;
+		Area<T>(Area<T>&&) = default;
+		Area<T>& operator=(const Area<T>&) = default;
+		Area<T>& operator=(Area<T>&&) = default;
+		~Area<T>() = default;
+
 		Point<T> location;
+		Point<T> size;
 	};
 
 	class Color

@@ -39,9 +39,9 @@ Provides constexpr overloads of normal cmath functions.
 \begin{DoxyCompactList}\small\item\em Returns the arc tangent of a value. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename F $>$ }\\Constexpr\+Wrapper$<$ F $>$ \mbox{\hyperlink{VMath_8hpp_ae02f466201af4889bec504e88b503569}{vlk\+::\+ATan}} (Constexpr\+Wrapper$<$ F $>$ f)
 \begin{DoxyCompactList}\small\item\em Returns the arc tangent of a value. \end{DoxyCompactList}\item 
-{\footnotesize template$<$typename F $>$ }\\F \mbox{\hyperlink{VMath_8hpp_a8a7ad6b70382bfdbd950393160e8d823}{vlk\+::\+ATan2}} (F x, F y)
+{\footnotesize template$<$typename F $>$ }\\F \mbox{\hyperlink{VMath_8hpp_aa130deb1a7a48aa6b70116db1579084f}{vlk\+::\+ATan2}} (F y, F x)
 \begin{DoxyCompactList}\small\item\em Returns the arc tangent of a coordinate measured from the origin. \end{DoxyCompactList}\item 
-{\footnotesize template$<$typename F $>$ }\\Constexpr\+Wrapper$<$ F $>$ \mbox{\hyperlink{VMath_8hpp_a0c6f9b74c6a8dde3813ee205dae4fcdc}{vlk\+::\+ATan2}} (Constexpr\+Wrapper$<$ F $>$ x, Constexpr\+Wrapper$<$ F $>$ y)
+{\footnotesize template$<$typename F $>$ }\\Constexpr\+Wrapper$<$ F $>$ \mbox{\hyperlink{VMath_8hpp_ab5670e772201fed68974a05f67bb60e7}{vlk\+::\+ATan2}} (Constexpr\+Wrapper$<$ F $>$ y, Constexpr\+Wrapper$<$ F $>$ x)
 \begin{DoxyCompactList}\small\item\em Returns the arc tangent of a coordinate measured from the origin. \end{DoxyCompactList}\item 
 {\footnotesize template$<$typename F $>$ }\\F \mbox{\hyperlink{VMath_8hpp_aa8f8ae43370a5410170a208a9a85f31e}{vlk\+::\+Sqrt}} (F f)
 \begin{DoxyCompactList}\small\item\em Returns the square root of a number. \end{DoxyCompactList}\item 
@@ -225,12 +225,12 @@ Returns the arc tangent of a value.
 \begin{DoxyReturn}{Returns}
 An angle, given in radians 
 \end{DoxyReturn}
-\mbox{\Hypertarget{VMath_8hpp_a0c6f9b74c6a8dde3813ee205dae4fcdc}\label{VMath_8hpp_a0c6f9b74c6a8dde3813ee205dae4fcdc}} 
+\mbox{\Hypertarget{VMath_8hpp_ab5670e772201fed68974a05f67bb60e7}\label{VMath_8hpp_ab5670e772201fed68974a05f67bb60e7}} 
 \index{VMath.hpp@{VMath.hpp}!ATan2@{ATan2}}
 \index{ATan2@{ATan2}!VMath.hpp@{VMath.hpp}}
 \doxysubsubsection{\texorpdfstring{ATan2()}{ATan2()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
 {\footnotesize\ttfamily template$<$typename F $>$ \\
-Constexpr\+Wrapper$<$F$>$ vlk\+::\+ATan2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ F $>$}]{x,  }\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ F $>$}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+Constexpr\+Wrapper$<$F$>$ vlk\+::\+ATan2 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ F $>$}]{y,  }\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ F $>$}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 
@@ -251,12 +251,12 @@ An angle, given in radians
 \begin{DoxyRemark}{Remarks}
 Constexpr-\/compatible overload. Do not use in runtime code. 
 \end{DoxyRemark}
-\mbox{\Hypertarget{VMath_8hpp_a8a7ad6b70382bfdbd950393160e8d823}\label{VMath_8hpp_a8a7ad6b70382bfdbd950393160e8d823}} 
+\mbox{\Hypertarget{VMath_8hpp_aa130deb1a7a48aa6b70116db1579084f}\label{VMath_8hpp_aa130deb1a7a48aa6b70116db1579084f}} 
 \index{VMath.hpp@{VMath.hpp}!ATan2@{ATan2}}
 \index{ATan2@{ATan2}!VMath.hpp@{VMath.hpp}}
 \doxysubsubsection{\texorpdfstring{ATan2()}{ATan2()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily template$<$typename F $>$ \\
-F vlk\+::\+ATan2 (\begin{DoxyParamCaption}\item[{F}]{x,  }\item[{F}]{y }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+F vlk\+::\+ATan2 (\begin{DoxyParamCaption}\item[{F}]{y,  }\item[{F}]{x }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
 
 
 

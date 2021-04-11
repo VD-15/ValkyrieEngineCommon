@@ -92,9 +92,8 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a106de8ad33b4828a85dbff595ae831ab"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classvlk_1_1ConstexprWrapper.html">ConstexprWrapper</a>&lt; Float &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvlk_1_1Vector2.html#a106de8ad33b4828a85dbff595ae831ab">SquareLength</a> (<a class="el" href="classvlk_1_1ConstexprWrapper.html">ConstexprWrapper</a>&lt; <a class="el" href="classvlk_1_1Vector2.html">Vector2</a> &gt; v)</td></tr>
 <tr class="memdesc:a106de8ad33b4828a85dbff595ae831ab"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the square length of this vector. Can be faster than calculating <a class="el" href="classvlk_1_1Vector2.html#a4a5bacdaa4adf1e938da1911a4169b76" title="Returns the length (magnitude) of a vector.">Length</a>. If you're just comparing the relative length of vectors and don't need the actual magnitude, use this.  <a href="classvlk_1_1Vector2.html#a106de8ad33b4828a85dbff595ae831ab">More...</a><br /></td></tr>
 <tr class="separator:a106de8ad33b4828a85dbff595ae831ab"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aef36382cf25c4a0a0916e485404cc327"><td class="memItemLeft" align="right" valign="top"><a id="aef36382cf25c4a0a0916e485404cc327"></a>
-static <a class="el" href="classvlk_1_1Vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvlk_1_1Vector2.html#aef36382cf25c4a0a0916e485404cc327">Normalized</a> (const <a class="el" href="classvlk_1_1Vector2.html">Vector2</a> &amp;v)</td></tr>
-<tr class="memdesc:aef36382cf25c4a0a0916e485404cc327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a unit vector with the same direction as <code>v</code>. <br /></td></tr>
+<tr class="memitem:aef36382cf25c4a0a0916e485404cc327"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classvlk_1_1Vector2.html">Vector2</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvlk_1_1Vector2.html#aef36382cf25c4a0a0916e485404cc327">Normalized</a> (const <a class="el" href="classvlk_1_1Vector2.html">Vector2</a> &amp;v)</td></tr>
+<tr class="memdesc:aef36382cf25c4a0a0916e485404cc327"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a unit vector with the same direction as <code>v</code>.  <a href="classvlk_1_1Vector2.html#aef36382cf25c4a0a0916e485404cc327">More...</a><br /></td></tr>
 <tr class="separator:aef36382cf25c4a0a0916e485404cc327"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab9098ca554ab79ad515cee774896e705"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classvlk_1_1ConstexprWrapper.html">ConstexprWrapper</a>&lt; <a class="el" href="classvlk_1_1Vector2.html">Vector2</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvlk_1_1Vector2.html#ab9098ca554ab79ad515cee774896e705">Normalized</a> (<a class="el" href="classvlk_1_1ConstexprWrapper.html">ConstexprWrapper</a>&lt; <a class="el" href="classvlk_1_1Vector2.html">Vector2</a> &gt; v)</td></tr>
 <tr class="memdesc:ab9098ca554ab79ad515cee774896e705"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns a unit vector with the same direction as <code>v</code>.  <a href="classvlk_1_1Vector2.html#ab9098ca554ab79ad515cee774896e705">More...</a><br /></td></tr>
@@ -359,8 +358,37 @@ static <a class="el" href="classvlk_1_1Vector2.html">Vector2</a>&#160;</td><td c
 
 </div>
 </div>
+<a id="aef36382cf25c4a0a0916e485404cc327"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aef36382cf25c4a0a0916e485404cc327">&#9670;&nbsp;</a></span>Normalized() <span class="overload">[1/2]</span></h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">static <a class="el" href="classvlk_1_1Vector2.html">Vector2</a> vlk::Vector2::Normalized </td>
+          <td>(</td>
+          <td class="paramtype">const <a class="el" href="classvlk_1_1Vector2.html">Vector2</a> &amp;&#160;</td>
+          <td class="paramname"><em>v</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">static</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Returns a unit vector with the same direction as <code>v</code>. </p>
+<dl class="section warning"><dt>Warning</dt><dd>If the provided vector has a length of zero, both components of the returned vector will be <code>NaN</code> </dd></dl>
+
+</div>
+</div>
 <a id="ab9098ca554ab79ad515cee774896e705"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab9098ca554ab79ad515cee774896e705">&#9670;&nbsp;</a></span>Normalized()</h2>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9098ca554ab79ad515cee774896e705">&#9670;&nbsp;</a></span>Normalized() <span class="overload">[2/2]</span></h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -384,6 +412,7 @@ static <a class="el" href="classvlk_1_1Vector2.html">Vector2</a>&#160;</td><td c
 </div><div class="memdoc">
 
 <p>Returns a unit vector with the same direction as <code>v</code>. </p>
+<dl class="section warning"><dt>Warning</dt><dd>If the provided vector has a length of zero, both components of the returned vector will be <code>NaN</code></dd></dl>
 <dl class="section remark"><dt>Remarks</dt><dd>Constexpr-compatible overload. Do not use in runtime code. </dd></dl>
 
 </div>

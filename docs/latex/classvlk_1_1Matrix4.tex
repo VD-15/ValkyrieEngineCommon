@@ -2,7 +2,7 @@
 \label{classvlk_1_1Matrix4}\index{vlk::Matrix4@{vlk::Matrix4}}
 
 
-Stub for 4x4 matrix class.  
+Column-\/major 4x4 transformation matrix.  
 
 
 
@@ -12,9 +12,9 @@ Stub for 4x4 matrix class.
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classvlk_1_1Matrix4_aa1e944fd9868fcc1318794cdec322c16}\label{classvlk_1_1Matrix4_aa1e944fd9868fcc1318794cdec322c16}} 
-\mbox{\hyperlink{classvlk_1_1Matrix4_aa1e944fd9868fcc1318794cdec322c16}{Matrix4}} ()=default
-\begin{DoxyCompactList}\small\item\em Creates a matrix with all values initialized to 0.\+0. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Matrix4_af17bc71f1a0863a2020023aaeee85e38}\label{classvlk_1_1Matrix4_af17bc71f1a0863a2020023aaeee85e38}} 
+\mbox{\hyperlink{classvlk_1_1Matrix4_af17bc71f1a0863a2020023aaeee85e38}{Matrix4}} ()
+\begin{DoxyCompactList}\small\item\em Creates a 4x4 identity matrix. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classvlk_1_1Matrix4_a0cb2397150a195f939eee44c0fbb970d}{Matrix4}} (Float x0, Float x1, Float x2, Float x3, Float y0, Float y1, Float y2, Float y3, Float z0, Float z1, Float z2, Float z3, Float w0, Float w1, Float w2, Float w3)
 \begin{DoxyCompactList}\small\item\em Initialize individual values of a matrix. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classvlk_1_1Matrix4_a8c7efa057c2862e43112b614f13e8397}{Matrix4}} (\mbox{\hyperlink{classvlk_1_1Vector4}{Vector4}} v0, \mbox{\hyperlink{classvlk_1_1Vector4}{Vector4}} v1, \mbox{\hyperlink{classvlk_1_1Vector4}{Vector4}} v2, \mbox{\hyperlink{classvlk_1_1Vector4}{Vector4}} v3)
@@ -45,9 +45,6 @@ Stub for 4x4 matrix class.
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classvlk_1_1Matrix4_a615685948971ce4f788b7609b5240d12}\label{classvlk_1_1Matrix4_a615685948971ce4f788b7609b5240d12}} 
-static \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk_1_1Matrix4_a615685948971ce4f788b7609b5240d12}{Identity}} ()
-\begin{DoxyCompactList}\small\item\em Constructs an identity matrix. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classvlk_1_1Matrix4_ac3572f63b77bff32783c1da946ef8c27}\label{classvlk_1_1Matrix4_ac3572f63b77bff32783c1da946ef8c27}} 
 static \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk_1_1Matrix4_ac3572f63b77bff32783c1da946ef8c27}{Create\+Translation}} (const \mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} \&v)
 \begin{DoxyCompactList}\small\item\em Creates a matrix equivelant to the translation represented by {\ttfamily v}. \end{DoxyCompactList}\item 
@@ -75,8 +72,8 @@ static \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk
 \begin{DoxyCompactList}\small\item\em Creates a matrix representing a rotation of {\ttfamily angle} radians around the normalized axis {\ttfamily axis} \end{DoxyCompactList}\item 
 static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} $>$ \mbox{\hyperlink{classvlk_1_1Matrix4_aff9660dcdd05d208d6e07c4504f634b8}{Create\+Rotation}} (\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ Float $>$ angle, \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} $>$ axis)
 \begin{DoxyCompactList}\small\item\em Creates a matrix representing a rotation of {\ttfamily angle} radians around the normalized axis {\ttfamily axis} \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classvlk_1_1Matrix4_ac7121fcb4515c9fcba60719240d70e81}\label{classvlk_1_1Matrix4_ac7121fcb4515c9fcba60719240d70e81}} 
-static \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk_1_1Matrix4_ac7121fcb4515c9fcba60719240d70e81}{Create\+Rotation}} (\mbox{\hyperlink{classvlk_1_1Quaternion}{Quaternion}} q)
+\mbox{\Hypertarget{classvlk_1_1Matrix4_a905126b20756251bea694ff3e928dd27}\label{classvlk_1_1Matrix4_a905126b20756251bea694ff3e928dd27}} 
+static \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk_1_1Matrix4_a905126b20756251bea694ff3e928dd27}{Create\+Rotation}} (const \mbox{\hyperlink{classvlk_1_1Quaternion}{Quaternion}} \&q)
 \begin{DoxyCompactList}\small\item\em Creates a matrix representing an equivelant roatation to quaternion {\ttfamily q}. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classvlk_1_1Matrix4_adddd96d691c783d2dc57f7ccbf0b7f44}\label{classvlk_1_1Matrix4_adddd96d691c783d2dc57f7ccbf0b7f44}} 
 static \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk_1_1Matrix4_adddd96d691c783d2dc57f7ccbf0b7f44}{Create\+Scale}} (const \mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} \&v)
@@ -93,7 +90,9 @@ static \mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk
 
 
 \doxysubsection{Detailed Description}
-Stub for 4x4 matrix class. 
+Column-\/major 4x4 transformation matrix. 
+
+Used to store and apply transformations in 3d space 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classvlk_1_1Matrix4_a0cb2397150a195f939eee44c0fbb970d}\label{classvlk_1_1Matrix4_a0cb2397150a195f939eee44c0fbb970d}} 

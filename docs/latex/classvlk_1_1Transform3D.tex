@@ -1,0 +1,67 @@
+\hypertarget{classvlk_1_1Transform3D}{}\doxysection{vlk\+::Transform3D Class Reference}
+\label{classvlk_1_1Transform3D}\index{vlk::Transform3D@{vlk::Transform3D}}
+
+
+3D geometric transform.  
+
+
+
+
+{\ttfamily \#include $<$Transform.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classvlk_1_1Transform3D_ace5dde280d4bfb1162a764155da8f8a7}\label{classvlk_1_1Transform3D_ace5dde280d4bfb1162a764155da8f8a7}} 
+\mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk_1_1Transform3D_ace5dde280d4bfb1162a764155da8f8a7}{Get\+Matrix}} () const
+\begin{DoxyCompactList}\small\item\em brief Gets a transformation matrix representing this transform of this object in local space. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Transform3D_a4ad3dcb5680c6c3a42e4b526b45f12c0}\label{classvlk_1_1Transform3D_a4ad3dcb5680c6c3a42e4b526b45f12c0}} 
+\mbox{\hyperlink{classvlk_1_1Matrix4}{Matrix4}} \mbox{\hyperlink{classvlk_1_1Transform3D_a4ad3dcb5680c6c3a42e4b526b45f12c0}{Get\+World\+Matrix}} () const
+\begin{DoxyCompactList}\small\item\em Gets a transformation matrix representing the transform of this object and all it\textquotesingle{}s parent transforms in world space. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Transform3D_aebccb661a505f801f99a189518fd327f}\label{classvlk_1_1Transform3D_aebccb661a505f801f99a189518fd327f}} 
+const \mbox{\hyperlink{classvlk_1_1Transform3D}{Transform3D}} $\ast$ \mbox{\hyperlink{classvlk_1_1Transform3D_aebccb661a505f801f99a189518fd327f}{Get\+Parent}} () const
+\begin{DoxyCompactList}\small\item\em Gets the current parent of this transform object, may be {\ttfamily nullptr}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classvlk_1_1Transform3D_a9b83d22cf7a4f12ad852cb5a1f67aa52}{Set\+Parent}} (const \mbox{\hyperlink{classvlk_1_1Transform3D}{Transform3D}} $\ast$tr)
+\begin{DoxyCompactList}\small\item\em Sets the parent of this transform. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Transform3D_acc95c93e130fd8a4651691d521123b5e}\label{classvlk_1_1Transform3D_acc95c93e130fd8a4651691d521123b5e}} 
+\mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} \mbox{\hyperlink{classvlk_1_1Transform3D_acc95c93e130fd8a4651691d521123b5e}{Get\+World\+Translation}} () const
+\begin{DoxyCompactList}\small\item\em Gets the translation of this transform in world space. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Transform3D_a23d0d972fac4d3b6e4e3416c6efd9cdf}\label{classvlk_1_1Transform3D_a23d0d972fac4d3b6e4e3416c6efd9cdf}} 
+\mbox{\hyperlink{classvlk_1_1Quaternion}{Quaternion}} \mbox{\hyperlink{classvlk_1_1Transform3D_a23d0d972fac4d3b6e4e3416c6efd9cdf}{Get\+World\+Rotation}} () const
+\begin{DoxyCompactList}\small\item\em Gets the rotation of this transform in world space. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Transform3D_a312090a2749baf1ec6c7d420b90052ae}\label{classvlk_1_1Transform3D_a312090a2749baf1ec6c7d420b90052ae}} 
+\mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} \mbox{\hyperlink{classvlk_1_1Transform3D_a312090a2749baf1ec6c7d420b90052ae}{Get\+World\+Scale}} () const
+\begin{DoxyCompactList}\small\item\em Gets the approximate scale of this transform in world space. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+3D geometric transform. 
+
+Combines a scale, rotation and translation into a single operation. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classvlk_1_1Transform3D_a9b83d22cf7a4f12ad852cb5a1f67aa52}\label{classvlk_1_1Transform3D_a9b83d22cf7a4f12ad852cb5a1f67aa52}} 
+\index{vlk::Transform3D@{vlk::Transform3D}!SetParent@{SetParent}}
+\index{SetParent@{SetParent}!vlk::Transform3D@{vlk::Transform3D}}
+\doxysubsubsection{\texorpdfstring{SetParent()}{SetParent()}}
+{\footnotesize\ttfamily void vlk\+::\+Transform3\+D\+::\+Set\+Parent (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvlk_1_1Transform3D}{Transform3D}} $\ast$}]{tr }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Sets the parent of this transform. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tr} & The new parent of this transform or {\ttfamily nullptr} to remove the current parent. Additionally, {\ttfamily this} must not be equal to {\ttfamily tr} or any parent of {\ttfamily tr}.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::runtime\+\_\+error} & If {\ttfamily this} is already a parent of {\ttfamily tr}. \\
+\hline
+\end{DoxyExceptions}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/\+Valkyrie\+Engine\+Common/Transform.\+hpp\end{DoxyCompactItemize}

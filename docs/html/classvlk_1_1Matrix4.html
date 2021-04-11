@@ -74,17 +74,17 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Stub for 4x4 matrix class.  
+<p>Column-major 4x4 transformation matrix.  
  <a href="classvlk_1_1Matrix4.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Matrix_8hpp_source.html">Matrix.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aa1e944fd9868fcc1318794cdec322c16"><td class="memItemLeft" align="right" valign="top"><a id="aa1e944fd9868fcc1318794cdec322c16"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvlk_1_1Matrix4.html#aa1e944fd9868fcc1318794cdec322c16">Matrix4</a> ()=default</td></tr>
-<tr class="memdesc:aa1e944fd9868fcc1318794cdec322c16"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix with all values initialized to 0.0. <br /></td></tr>
-<tr class="separator:aa1e944fd9868fcc1318794cdec322c16"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af17bc71f1a0863a2020023aaeee85e38"><td class="memItemLeft" align="right" valign="top"><a id="af17bc71f1a0863a2020023aaeee85e38"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvlk_1_1Matrix4.html#af17bc71f1a0863a2020023aaeee85e38">Matrix4</a> ()</td></tr>
+<tr class="memdesc:af17bc71f1a0863a2020023aaeee85e38"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a 4x4 identity matrix. <br /></td></tr>
+<tr class="separator:af17bc71f1a0863a2020023aaeee85e38"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0cb2397150a195f939eee44c0fbb970d"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvlk_1_1Matrix4.html#a0cb2397150a195f939eee44c0fbb970d">Matrix4</a> (Float x0, Float x1, Float x2, Float x3, Float y0, Float y1, Float y2, Float y3, Float z0, Float z1, Float z2, Float z3, Float w0, Float w1, Float w2, Float w3)</td></tr>
 <tr class="memdesc:a0cb2397150a195f939eee44c0fbb970d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize individual values of a matrix.  <a href="classvlk_1_1Matrix4.html#a0cb2397150a195f939eee44c0fbb970d">More...</a><br /></td></tr>
 <tr class="separator:a0cb2397150a195f939eee44c0fbb970d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -126,10 +126,6 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a615685948971ce4f788b7609b5240d12"><td class="memItemLeft" align="right" valign="top"><a id="a615685948971ce4f788b7609b5240d12"></a>
-static <a class="el" href="classvlk_1_1Matrix4.html">Matrix4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvlk_1_1Matrix4.html#a615685948971ce4f788b7609b5240d12">Identity</a> ()</td></tr>
-<tr class="memdesc:a615685948971ce4f788b7609b5240d12"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an identity matrix. <br /></td></tr>
-<tr class="separator:a615685948971ce4f788b7609b5240d12"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3572f63b77bff32783c1da946ef8c27"><td class="memItemLeft" align="right" valign="top"><a id="ac3572f63b77bff32783c1da946ef8c27"></a>
 static <a class="el" href="classvlk_1_1Matrix4.html">Matrix4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvlk_1_1Matrix4.html#ac3572f63b77bff32783c1da946ef8c27">CreateTranslation</a> (const <a class="el" href="classvlk_1_1Vector3.html">Vector3</a> &amp;v)</td></tr>
 <tr class="memdesc:ac3572f63b77bff32783c1da946ef8c27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix equivelant to the translation represented by <code>v</code>. <br /></td></tr>
@@ -168,10 +164,10 @@ static <a class="el" href="classvlk_1_1Matrix4.html">Matrix4</a>&#160;</td><td c
 <tr class="memitem:aff9660dcdd05d208d6e07c4504f634b8"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="classvlk_1_1ConstexprWrapper.html">ConstexprWrapper</a>&lt; <a class="el" href="classvlk_1_1Matrix4.html">Matrix4</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvlk_1_1Matrix4.html#aff9660dcdd05d208d6e07c4504f634b8">CreateRotation</a> (<a class="el" href="classvlk_1_1ConstexprWrapper.html">ConstexprWrapper</a>&lt; Float &gt; angle, <a class="el" href="classvlk_1_1ConstexprWrapper.html">ConstexprWrapper</a>&lt; <a class="el" href="classvlk_1_1Vector3.html">Vector3</a> &gt; axis)</td></tr>
 <tr class="memdesc:aff9660dcdd05d208d6e07c4504f634b8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix representing a rotation of <code>angle</code> radians around the normalized axis <code>axis</code>  <a href="classvlk_1_1Matrix4.html#aff9660dcdd05d208d6e07c4504f634b8">More...</a><br /></td></tr>
 <tr class="separator:aff9660dcdd05d208d6e07c4504f634b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac7121fcb4515c9fcba60719240d70e81"><td class="memItemLeft" align="right" valign="top"><a id="ac7121fcb4515c9fcba60719240d70e81"></a>
-static <a class="el" href="classvlk_1_1Matrix4.html">Matrix4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvlk_1_1Matrix4.html#ac7121fcb4515c9fcba60719240d70e81">CreateRotation</a> (<a class="el" href="classvlk_1_1Quaternion.html">Quaternion</a> q)</td></tr>
-<tr class="memdesc:ac7121fcb4515c9fcba60719240d70e81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix representing an equivelant roatation to quaternion <code>q</code>. <br /></td></tr>
-<tr class="separator:ac7121fcb4515c9fcba60719240d70e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a905126b20756251bea694ff3e928dd27"><td class="memItemLeft" align="right" valign="top"><a id="a905126b20756251bea694ff3e928dd27"></a>
+static <a class="el" href="classvlk_1_1Matrix4.html">Matrix4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvlk_1_1Matrix4.html#a905126b20756251bea694ff3e928dd27">CreateRotation</a> (const <a class="el" href="classvlk_1_1Quaternion.html">Quaternion</a> &amp;q)</td></tr>
+<tr class="memdesc:a905126b20756251bea694ff3e928dd27"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix representing an equivelant roatation to quaternion <code>q</code>. <br /></td></tr>
+<tr class="separator:a905126b20756251bea694ff3e928dd27"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adddd96d691c783d2dc57f7ccbf0b7f44"><td class="memItemLeft" align="right" valign="top"><a id="adddd96d691c783d2dc57f7ccbf0b7f44"></a>
 static <a class="el" href="classvlk_1_1Matrix4.html">Matrix4</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvlk_1_1Matrix4.html#adddd96d691c783d2dc57f7ccbf0b7f44">CreateScale</a> (const <a class="el" href="classvlk_1_1Vector3.html">Vector3</a> &amp;v)</td></tr>
 <tr class="memdesc:adddd96d691c783d2dc57f7ccbf0b7f44"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix that scales by the amount specified in <code>v</code>. <br /></td></tr>
@@ -190,7 +186,8 @@ static <a class="el" href="classvlk_1_1Matrix4.html">Matrix4</a>&#160;</td><td c
 <tr class="separator:a13767723133008f39d2d7871590f1c3c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Stub for 4x4 matrix class. </p>
+<div class="textblock"><p>Column-major 4x4 transformation matrix. </p>
+<p>Used to store and apply transformations in 3d space </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a0cb2397150a195f939eee44c0fbb970d"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a0cb2397150a195f939eee44c0fbb970d">&#9670;&nbsp;</a></span>Matrix4() <span class="overload">[1/2]</span></h2>

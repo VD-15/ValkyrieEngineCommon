@@ -70,7 +70,7 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 <a href="VMath_8hpp.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef VLK_VMATK_HPP</span></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#ifndef VLK_VMATH_HPP</span></div>
 <div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#define VLK_VMATH_HPP</span></div>
 <div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
 <div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="comment">//TODO: use Morwenn/static_math for better precision on some functions?</span></div>
@@ -108,7 +108,7 @@ $(function() {
 <div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> T&gt;</div>
 <div class="line"><a name="l00062"></a><span class="lineno"><a class="line" href="VMath_8hpp.html#a92a63252b4446c28f88539ffb73a0469">   62</a></span>&#160;    VLK_CXX14_CONSTEXPR T <a class="code" href="VMath_8hpp.html#a92a63252b4446c28f88539ffb73a0469">Sign</a>(T t)</div>
 <div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    {</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> (T(0) &lt; t) - (t &gt; T(0));</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordflow">return</span> (T(0) &lt; t) - (t &lt; T(0));</div>
 <div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    }</div>
 <div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
 <div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> F&gt;</div>
@@ -185,15 +185,15 @@ $(function() {
 <div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    }</div>
 <div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160; </div>
 <div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> F&gt;</div>
-<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="VMath_8hpp.html#a8a7ad6b70382bfdbd950393160e8d823">  223</a></span>&#160;    <span class="keyword">inline</span> F <a class="code" href="VMath_8hpp.html#a8a7ad6b70382bfdbd950393160e8d823">ATan2</a>(F x, F y)</div>
+<div class="line"><a name="l00223"></a><span class="lineno"><a class="line" href="VMath_8hpp.html#aa130deb1a7a48aa6b70116db1579084f">  223</a></span>&#160;    <span class="keyword">inline</span> F <a class="code" href="VMath_8hpp.html#aa130deb1a7a48aa6b70116db1579084f">ATan2</a>(F y, F x)</div>
 <div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    {</div>
-<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">return</span> std::atan2(x, y);</div>
+<div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;        <span class="keywordflow">return</span> std::atan2(y, x);</div>
 <div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    }</div>
 <div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160; </div>
 <div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> F&gt;</div>
-<div class="line"><a name="l00234"></a><span class="lineno"><a class="line" href="VMath_8hpp.html#a0c6f9b74c6a8dde3813ee205dae4fcdc">  234</a></span>&#160;    VLK_CXX14_CONSTEXPR <span class="keyword">inline</span> <a class="code" href="classvlk_1_1ConstexprWrapper.html">ConstexprWrapper&lt;F&gt;</a> <a class="code" href="VMath_8hpp.html#a8a7ad6b70382bfdbd950393160e8d823">ATan2</a>(<a class="code" href="classvlk_1_1ConstexprWrapper.html">ConstexprWrapper&lt;F&gt;</a> x, <a class="code" href="classvlk_1_1ConstexprWrapper.html">ConstexprWrapper&lt;F&gt;</a> y)</div>
+<div class="line"><a name="l00234"></a><span class="lineno"><a class="line" href="VMath_8hpp.html#ab5670e772201fed68974a05f67bb60e7">  234</a></span>&#160;    VLK_CXX14_CONSTEXPR <span class="keyword">inline</span> <a class="code" href="classvlk_1_1ConstexprWrapper.html">ConstexprWrapper&lt;F&gt;</a> <a class="code" href="VMath_8hpp.html#aa130deb1a7a48aa6b70116db1579084f">ATan2</a>(<a class="code" href="classvlk_1_1ConstexprWrapper.html">ConstexprWrapper&lt;F&gt;</a> y, <a class="code" href="classvlk_1_1ConstexprWrapper.html">ConstexprWrapper&lt;F&gt;</a> x)</div>
 <div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    {</div>
-<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">return</span> ForceCXPR(gcem::atan2(<span class="keyword">static_cast&lt;</span>F<span class="keyword">&gt;</span>(x), <span class="keyword">static_cast&lt;</span>F<span class="keyword">&gt;</span>(y)));</div>
+<div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;        <span class="keywordflow">return</span> ForceCXPR(gcem::atan2(<span class="keyword">static_cast&lt;</span>F<span class="keyword">&gt;</span>(y), <span class="keyword">static_cast&lt;</span>F<span class="keyword">&gt;</span>(x)));</div>
 <div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    }</div>
 <div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    </div>
 <div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;    <span class="keyword">template</span> &lt;<span class="keyword">typename</span> F&gt;</div>
@@ -304,9 +304,9 @@ $(function() {
 <div class="ttc" id="aVMath_8hpp_html_a32fdccc5ebf420d0c9d4e0ef8ce43a0b"><div class="ttname"><a href="VMath_8hpp.html#a32fdccc5ebf420d0c9d4e0ef8ce43a0b">vlk::Trunc</a></div><div class="ttdeci">F Trunc(F f)</div><div class="ttdoc">Returns the truncation of a floating point number. Rounds towards zero to the nearest whole number.</div><div class="ttdef"><b>Definition:</b> VMath.hpp:362</div></div>
 <div class="ttc" id="aVMath_8hpp_html_a335564315e97a09761f3ee57b0e2293f"><div class="ttname"><a href="VMath_8hpp.html#a335564315e97a09761f3ee57b0e2293f">vlk::Pow</a></div><div class="ttdeci">F Pow(F f, F e)</div><div class="ttdoc">Returns the value of f raised to the power of e.</div><div class="ttdef"><b>Definition:</b> VMath.hpp:268</div></div>
 <div class="ttc" id="aVMath_8hpp_html_a3524a4478412ee4941c3a01fbf50b897"><div class="ttname"><a href="VMath_8hpp.html#a3524a4478412ee4941c3a01fbf50b897">vlk::Round</a></div><div class="ttdeci">F Round(F f)</div><div class="ttdoc">Rounds a floating point to the nearest whole number.</div><div class="ttdef"><b>Definition:</b> VMath.hpp:382</div></div>
-<div class="ttc" id="aVMath_8hpp_html_a8a7ad6b70382bfdbd950393160e8d823"><div class="ttname"><a href="VMath_8hpp.html#a8a7ad6b70382bfdbd950393160e8d823">vlk::ATan2</a></div><div class="ttdeci">F ATan2(F x, F y)</div><div class="ttdoc">Returns the arc tangent of a coordinate measured from the origin.</div><div class="ttdef"><b>Definition:</b> VMath.hpp:223</div></div>
 <div class="ttc" id="aVMath_8hpp_html_a92a63252b4446c28f88539ffb73a0469"><div class="ttname"><a href="VMath_8hpp.html#a92a63252b4446c28f88539ffb73a0469">vlk::Sign</a></div><div class="ttdeci">T Sign(T t)</div><div class="ttdoc">Gets the sign of value t</div><div class="ttdef"><b>Definition:</b> VMath.hpp:62</div></div>
 <div class="ttc" id="aVMath_8hpp_html_aa0c612632e615f6cf4d3ce3eb6393de1"><div class="ttname"><a href="VMath_8hpp.html#aa0c612632e615f6cf4d3ce3eb6393de1">vlk::Cos</a></div><div class="ttdeci">F Cos(F f)</div><div class="ttdoc">Returns the cosine of an angle.</div><div class="ttdef"><b>Definition:</b> VMath.hpp:99</div></div>
+<div class="ttc" id="aVMath_8hpp_html_aa130deb1a7a48aa6b70116db1579084f"><div class="ttname"><a href="VMath_8hpp.html#aa130deb1a7a48aa6b70116db1579084f">vlk::ATan2</a></div><div class="ttdeci">F ATan2(F y, F x)</div><div class="ttdoc">Returns the arc tangent of a coordinate measured from the origin.</div><div class="ttdef"><b>Definition:</b> VMath.hpp:223</div></div>
 <div class="ttc" id="aVMath_8hpp_html_aa8f8ae43370a5410170a208a9a85f31e"><div class="ttname"><a href="VMath_8hpp.html#aa8f8ae43370a5410170a208a9a85f31e">vlk::Sqrt</a></div><div class="ttdeci">F Sqrt(F f)</div><div class="ttdoc">Returns the square root of a number.</div><div class="ttdef"><b>Definition:</b> VMath.hpp:245</div></div>
 <div class="ttc" id="aVMath_8hpp_html_aad50a7663e8544c5cef457e627dd6049"><div class="ttname"><a href="VMath_8hpp.html#aad50a7663e8544c5cef457e627dd6049">vlk::Ceil</a></div><div class="ttdeci">F Ceil(F f)</div><div class="ttdoc">Returns the ceiling of a floating point number.</div><div class="ttdef"><b>Definition:</b> VMath.hpp:319</div></div>
 <div class="ttc" id="aVMath_8hpp_html_abc96f604f4b5caa667095a2f359bb330"><div class="ttname"><a href="VMath_8hpp.html#abc96f604f4b5caa667095a2f359bb330">vlk::Tan</a></div><div class="ttdeci">F Tan(F f)</div><div class="ttdoc">Returns the tangent of an angle.</div><div class="ttdef"><b>Definition:</b> VMath.hpp:123</div></div>

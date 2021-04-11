@@ -1,8 +1,12 @@
 var searchData=
 [
-  ['getlocation_28',['GetLocation',['../classvlk_1_1Transform2D.html#a6ebd1876996f07a5f9074da045b63cbb',1,'vlk::Transform2D']]],
-  ['getmatrix_29',['GetMatrix',['../classvlk_1_1Transform2D.html#a3e2b3a2a93a7795294089893c8976ba9',1,'vlk::Transform2D']]],
-  ['getparent_30',['GetParent',['../classvlk_1_1Transform2D.html#a44e68f48a939f9527bf7f78168b4a0fa',1,'vlk::Transform2D']]],
-  ['getrotation_31',['GetRotation',['../classvlk_1_1Transform2D.html#af0b5786843c1fbacbecacf850344d802',1,'vlk::Transform2D::GetRotation() const'],['../classvlk_1_1Transform2D.html#a10a41e2b9f91e592203622735770d7fb',1,'vlk::Transform2D::GetRotation(ConstexprWrapper&lt; void &gt;) const']]],
-  ['getscale_32',['GetScale',['../classvlk_1_1Transform2D.html#a03a926f276aff73ac0c460c229fbd5d6',1,'vlk::Transform2D::GetScale() const'],['../classvlk_1_1Transform2D.html#a7339183c9b6a9dbd6222a809846be186',1,'vlk::Transform2D::GetScale(ConstexprWrapper&lt; void &gt;) const']]]
+  ['getcontent_30',['GetContent',['../classvlk_1_1Content.html#a1582ce1ce67c129b3aa820e11f7d0406',1,'vlk::Content']]],
+  ['getcontentprefix_31',['GetContentPrefix',['../classvlk_1_1Content.html#aaca12c7b98c8863bd1e49d43535a484c',1,'vlk::Content']]],
+  ['getmatrix_32',['GetMatrix',['../classvlk_1_1Transform2D.html#aa9d16d2c1bc4a7add0f2acb8a51836e1',1,'vlk::Transform2D::GetMatrix() const'],['../classvlk_1_1Transform2D.html#ab04b4b34142b072e7e5a8462d6cbce5c',1,'vlk::Transform2D::GetMatrix(ConstexprWrapper&lt; void &gt;) const'],['../classvlk_1_1Transform3D.html#ace5dde280d4bfb1162a764155da8f8a7',1,'vlk::Transform3D::GetMatrix()']]],
+  ['getmetadata_33',['GetMetadata',['../classvlk_1_1Content.html#a676bc5c90258b72e7b41d713175598bf',1,'vlk::Content']]],
+  ['getparent_34',['GetParent',['../classvlk_1_1Transform2D.html#a44e68f48a939f9527bf7f78168b4a0fa',1,'vlk::Transform2D::GetParent()'],['../classvlk_1_1Transform3D.html#aebccb661a505f801f99a189518fd327f',1,'vlk::Transform3D::GetParent()']]],
+  ['getworldmatrix_35',['GetWorldMatrix',['../classvlk_1_1Transform2D.html#af858d197f7c3df20a222b167a8767d17',1,'vlk::Transform2D::GetWorldMatrix()'],['../classvlk_1_1Transform3D.html#a4ad3dcb5680c6c3a42e4b526b45f12c0',1,'vlk::Transform3D::GetWorldMatrix()'],['../classvlk_1_1Transform2D.html#a63bdaae4b06ade32c123f5938a6ed1ef',1,'vlk::Transform2D::GetWorldMatrix() const']]],
+  ['getworldrotation_36',['GetWorldRotation',['../classvlk_1_1Transform2D.html#adb5dac06a61b701588f5fbd43eef35a9',1,'vlk::Transform2D::GetWorldRotation() const'],['../classvlk_1_1Transform2D.html#a017de801b243a098944114d600fd61dc',1,'vlk::Transform2D::GetWorldRotation(ConstexprWrapper&lt; void &gt;) const'],['../classvlk_1_1Transform3D.html#a23d0d972fac4d3b6e4e3416c6efd9cdf',1,'vlk::Transform3D::GetWorldRotation()']]],
+  ['getworldscale_37',['GetWorldScale',['../classvlk_1_1Transform2D.html#a42346cfb7b08e7f8c08cd91b10db3d26',1,'vlk::Transform2D::GetWorldScale() const'],['../classvlk_1_1Transform2D.html#a04731895fde51260af0e9f57d51c40ef',1,'vlk::Transform2D::GetWorldScale(ConstexprWrapper&lt; void &gt;) const'],['../classvlk_1_1Transform3D.html#a312090a2749baf1ec6c7d420b90052ae',1,'vlk::Transform3D::GetWorldScale()']]],
+  ['getworldtranslation_38',['GetWorldTranslation',['../classvlk_1_1Transform2D.html#a6939a2f8e59bbd4f9ef372db3c7ea3ce',1,'vlk::Transform2D::GetWorldTranslation()'],['../classvlk_1_1Transform3D.html#acc95c93e130fd8a4651691d521123b5e',1,'vlk::Transform3D::GetWorldTranslation()']]]
 ];

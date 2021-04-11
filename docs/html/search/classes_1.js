@@ -1,8 +1,7 @@
 var searchData=
 [
-  ['matrix3_82',['Matrix3',['../classvlk_1_1Matrix3.html',1,'vlk']]],
-  ['matrix4_83',['Matrix4',['../classvlk_1_1Matrix4.html',1,'vlk']]],
-  ['matrixbase_84',['MatrixBase',['../classvlk_1_1MatrixBase.html',1,'vlk']]],
-  ['matrixbase_3c_203_2c_203_2c_20float_20_3e_85',['MatrixBase&lt; 3, 3, Float &gt;',['../classvlk_1_1MatrixBase.html',1,'vlk']]],
-  ['matrixbase_3c_204_2c_204_2c_20float_20_3e_86',['MatrixBase&lt; 4, 4, Float &gt;',['../classvlk_1_1MatrixBase.html',1,'vlk']]]
+  ['color_88',['Color',['../classvlk_1_1Color.html',1,'vlk']]],
+  ['constexprwrapper_89',['ConstexprWrapper',['../classvlk_1_1ConstexprWrapper.html',1,'vlk']]],
+  ['constexprwrapper_3c_20void_20_3e_90',['ConstexprWrapper&lt; void &gt;',['../classvlk_1_1ConstexprWrapper_3_01void_01_4.html',1,'vlk']]],
+  ['content_91',['Content',['../classvlk_1_1Content.html',1,'vlk']]]
 ];

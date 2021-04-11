@@ -21,7 +21,6 @@ static Float \mbox{\hyperlink{classvlk_1_1Vector3_ada6d248b8e6786771138be50d0374
 \begin{DoxyCompactList}\small\item\em Returns the dot product of two vectors. \end{DoxyCompactList}\item 
 static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ Float $>$ \mbox{\hyperlink{classvlk_1_1Vector3_a4dd5d6041547a1342a946c48cfd8bbe8}{Dot}} (\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} $>$ lhs, \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} $>$ rhs)
 \begin{DoxyCompactList}\small\item\em Returns the dot product of two vectors. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classvlk_1_1Vector3_a2ae33d7106476aec113055413cdb910b}\label{classvlk_1_1Vector3_a2ae33d7106476aec113055413cdb910b}} 
 static \mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} \mbox{\hyperlink{classvlk_1_1Vector3_a2ae33d7106476aec113055413cdb910b}{Normalized}} (const \mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} \&v)
 \begin{DoxyCompactList}\small\item\em Returns a unit vector with the same direction as {\ttfamily v}. \end{DoxyCompactList}\item 
 static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} $>$ \mbox{\hyperlink{classvlk_1_1Vector3_abb22101e68bbf026b4798788b8cf140c}{Normalized}} (\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} $>$ v)
@@ -120,16 +119,32 @@ Linearly interpolates between two vectors.
 \begin{DoxyRemark}{Remarks}
 Constexpr-\/compatible overload. Do not use in runtime code. 
 \end{DoxyRemark}
+\mbox{\Hypertarget{classvlk_1_1Vector3_a2ae33d7106476aec113055413cdb910b}\label{classvlk_1_1Vector3_a2ae33d7106476aec113055413cdb910b}} 
+\index{vlk::Vector3@{vlk::Vector3}!Normalized@{Normalized}}
+\index{Normalized@{Normalized}!vlk::Vector3@{vlk::Vector3}}
+\doxysubsubsection{\texorpdfstring{Normalized()}{Normalized()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} vlk\+::\+Vector3\+::\+Normalized (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns a unit vector with the same direction as {\ttfamily v}. 
+
+\begin{DoxyWarning}{Warning}
+If the provided vector has a length of zero, both components of the returned vector will be {\ttfamily NaN} 
+\end{DoxyWarning}
 \mbox{\Hypertarget{classvlk_1_1Vector3_abb22101e68bbf026b4798788b8cf140c}\label{classvlk_1_1Vector3_abb22101e68bbf026b4798788b8cf140c}} 
 \index{vlk::Vector3@{vlk::Vector3}!Normalized@{Normalized}}
 \index{Normalized@{Normalized}!vlk::Vector3@{vlk::Vector3}}
-\doxysubsubsection{\texorpdfstring{Normalized()}{Normalized()}}
+\doxysubsubsection{\texorpdfstring{Normalized()}{Normalized()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$\mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}}$>$ vlk\+::\+Vector3\+::\+Normalized (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} $>$}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
 
 
 Returns a unit vector with the same direction as {\ttfamily v}. 
 
+\begin{DoxyWarning}{Warning}
+If the provided vector has a length of zero, both components of the returned vector will be {\ttfamily NaN}
+\end{DoxyWarning}
 \begin{DoxyRemark}{Remarks}
 Constexpr-\/compatible overload. Do not use in runtime code. 
 \end{DoxyRemark}

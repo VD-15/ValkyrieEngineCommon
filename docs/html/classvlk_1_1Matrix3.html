@@ -74,17 +74,17 @@ $(function() {
 </div><!--header-->
 <div class="contents">
 
-<p>Column-major 3x3 matrix. Used to store and apply transformations in 2d space.  
+<p>Column-major 3x3 transformation matrix.  
  <a href="classvlk_1_1Matrix3.html#details">More...</a></p>
 
 <p><code>#include &lt;<a class="el" href="Matrix_8hpp_source.html">Matrix.hpp</a>&gt;</code></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a62eb904320aab08fd4bf3ac98304ba0e"><td class="memItemLeft" align="right" valign="top"><a id="a62eb904320aab08fd4bf3ac98304ba0e"></a>
-&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvlk_1_1Matrix3.html#a62eb904320aab08fd4bf3ac98304ba0e">Matrix3</a> ()=default</td></tr>
-<tr class="memdesc:a62eb904320aab08fd4bf3ac98304ba0e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix with all values initialized to 0.0. <br /></td></tr>
-<tr class="separator:a62eb904320aab08fd4bf3ac98304ba0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ea0684f80dc1f1102cf760e9f5509c8"><td class="memItemLeft" align="right" valign="top"><a id="a6ea0684f80dc1f1102cf760e9f5509c8"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvlk_1_1Matrix3.html#a6ea0684f80dc1f1102cf760e9f5509c8">Matrix3</a> ()</td></tr>
+<tr class="memdesc:a6ea0684f80dc1f1102cf760e9f5509c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a 3x3 identity matrix. <br /></td></tr>
+<tr class="separator:a6ea0684f80dc1f1102cf760e9f5509c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae03e7823483b482e8d4ceaf8789956f9"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvlk_1_1Matrix3.html#ae03e7823483b482e8d4ceaf8789956f9">Matrix3</a> (Float x0, Float x1, Float x2, Float y0, Float y1, Float y2, Float z0, Float z1, Float z2)</td></tr>
 <tr class="memdesc:ae03e7823483b482e8d4ceaf8789956f9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initialize individual values of a matrix.  <a href="classvlk_1_1Matrix3.html#ae03e7823483b482e8d4ceaf8789956f9">More...</a><br /></td></tr>
 <tr class="separator:ae03e7823483b482e8d4ceaf8789956f9"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -129,10 +129,6 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:a96f80d2c1657878bb5e64c092096cc4e"><td class="memItemLeft" align="right" valign="top"><a id="a96f80d2c1657878bb5e64c092096cc4e"></a>
-static <a class="el" href="classvlk_1_1Matrix3.html">Matrix3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvlk_1_1Matrix3.html#a96f80d2c1657878bb5e64c092096cc4e">Identity</a> ()</td></tr>
-<tr class="memdesc:a96f80d2c1657878bb5e64c092096cc4e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constructs an identity matrix. <br /></td></tr>
-<tr class="separator:a96f80d2c1657878bb5e64c092096cc4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14d514a9034a9483a49b1375cb6637d7"><td class="memItemLeft" align="right" valign="top"><a id="a14d514a9034a9483a49b1375cb6637d7"></a>
 static <a class="el" href="classvlk_1_1Matrix3.html">Matrix3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvlk_1_1Matrix3.html#a14d514a9034a9483a49b1375cb6637d7">CreateTranslation</a> (const <a class="el" href="classvlk_1_1Vector2.html">Vector2</a> &amp;v)</td></tr>
 <tr class="memdesc:a14d514a9034a9483a49b1375cb6637d7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix equivelant to the translation represented by <code>v</code>. <br /></td></tr>
@@ -156,13 +152,10 @@ static <a class="el" href="classvlk_1_1Matrix3.html">Matrix3</a>&#160;</td><td c
 static <a class="el" href="classvlk_1_1Matrix3.html">Matrix3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvlk_1_1Matrix3.html#af12a7646d0f8523a74fef6386fc3feb4">CreateReflectionY</a> ()</td></tr>
 <tr class="memdesc:af12a7646d0f8523a74fef6386fc3feb4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix that reflects along the Y-axis. <br /></td></tr>
 <tr class="separator:af12a7646d0f8523a74fef6386fc3feb4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7c1e79992a5217d1b0c57ae3509193e6"><td class="memItemLeft" align="right" valign="top"><a id="a7c1e79992a5217d1b0c57ae3509193e6"></a>
-static <a class="el" href="classvlk_1_1Matrix3.html">Matrix3</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classvlk_1_1Matrix3.html#a7c1e79992a5217d1b0c57ae3509193e6">CreateReflectionXY</a> ()</td></tr>
-<tr class="memdesc:a7c1e79992a5217d1b0c57ae3509193e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates a matrix that reflects along the X and Y-axes. <br /></td></tr>
-<tr class="separator:a7c1e79992a5217d1b0c57ae3509193e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Column-major 3x3 matrix. Used to store and apply transformations in 2d space. </p>
+<div class="textblock"><p>Column-major 3x3 transformation matrix. </p>
+<p>Used to store and apply transformations in 2d space </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="ae03e7823483b482e8d4ceaf8789956f9"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#ae03e7823483b482e8d4ceaf8789956f9">&#9670;&nbsp;</a></span>Matrix3() <span class="overload">[1/2]</span></h2>

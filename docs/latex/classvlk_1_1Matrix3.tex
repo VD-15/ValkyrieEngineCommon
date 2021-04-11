@@ -2,7 +2,7 @@
 \label{classvlk_1_1Matrix3}\index{vlk::Matrix3@{vlk::Matrix3}}
 
 
-Column-\/major 3x3 matrix. Used to store and apply transformations in 2d space.  
+Column-\/major 3x3 transformation matrix.  
 
 
 
@@ -12,9 +12,9 @@ Column-\/major 3x3 matrix. Used to store and apply transformations in 2d space.
 \doxysubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classvlk_1_1Matrix3_a62eb904320aab08fd4bf3ac98304ba0e}\label{classvlk_1_1Matrix3_a62eb904320aab08fd4bf3ac98304ba0e}} 
-\mbox{\hyperlink{classvlk_1_1Matrix3_a62eb904320aab08fd4bf3ac98304ba0e}{Matrix3}} ()=default
-\begin{DoxyCompactList}\small\item\em Creates a matrix with all values initialized to 0.\+0. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classvlk_1_1Matrix3_a6ea0684f80dc1f1102cf760e9f5509c8}\label{classvlk_1_1Matrix3_a6ea0684f80dc1f1102cf760e9f5509c8}} 
+\mbox{\hyperlink{classvlk_1_1Matrix3_a6ea0684f80dc1f1102cf760e9f5509c8}{Matrix3}} ()
+\begin{DoxyCompactList}\small\item\em Creates a 3x3 identity matrix. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classvlk_1_1Matrix3_ae03e7823483b482e8d4ceaf8789956f9}{Matrix3}} (Float x0, Float x1, Float x2, Float y0, Float y1, Float y2, Float z0, Float z1, Float z2)
 \begin{DoxyCompactList}\small\item\em Initialize individual values of a matrix. \end{DoxyCompactList}\item 
 \mbox{\hyperlink{classvlk_1_1Matrix3_a4a1d0024a072fffb3c19e0c392b4b04c}{Matrix3}} (\mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} v0, \mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} v1, \mbox{\hyperlink{classvlk_1_1Vector3}{Vector3}} v2)
@@ -47,9 +47,6 @@ Column-\/major 3x3 matrix. Used to store and apply transformations in 2d space.
 \doxysubsection*{Static Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{classvlk_1_1Matrix3_a96f80d2c1657878bb5e64c092096cc4e}\label{classvlk_1_1Matrix3_a96f80d2c1657878bb5e64c092096cc4e}} 
-static \mbox{\hyperlink{classvlk_1_1Matrix3}{Matrix3}} \mbox{\hyperlink{classvlk_1_1Matrix3_a96f80d2c1657878bb5e64c092096cc4e}{Identity}} ()
-\begin{DoxyCompactList}\small\item\em Constructs an identity matrix. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classvlk_1_1Matrix3_a14d514a9034a9483a49b1375cb6637d7}\label{classvlk_1_1Matrix3_a14d514a9034a9483a49b1375cb6637d7}} 
 static \mbox{\hyperlink{classvlk_1_1Matrix3}{Matrix3}} \mbox{\hyperlink{classvlk_1_1Matrix3_a14d514a9034a9483a49b1375cb6637d7}{Create\+Translation}} (const \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \&v)
 \begin{DoxyCompactList}\small\item\em Creates a matrix equivelant to the translation represented by {\ttfamily v}. \end{DoxyCompactList}\item 
@@ -66,14 +63,13 @@ static \mbox{\hyperlink{classvlk_1_1Matrix3}{Matrix3}} \mbox{\hyperlink{classvlk
 \begin{DoxyCompactList}\small\item\em Creates a matrix that reflects along the X-\/axis. \end{DoxyCompactList}\item 
 \mbox{\Hypertarget{classvlk_1_1Matrix3_af12a7646d0f8523a74fef6386fc3feb4}\label{classvlk_1_1Matrix3_af12a7646d0f8523a74fef6386fc3feb4}} 
 static \mbox{\hyperlink{classvlk_1_1Matrix3}{Matrix3}} \mbox{\hyperlink{classvlk_1_1Matrix3_af12a7646d0f8523a74fef6386fc3feb4}{Create\+ReflectionY}} ()
-\begin{DoxyCompactList}\small\item\em Creates a matrix that reflects along the Y-\/axis. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classvlk_1_1Matrix3_a7c1e79992a5217d1b0c57ae3509193e6}\label{classvlk_1_1Matrix3_a7c1e79992a5217d1b0c57ae3509193e6}} 
-static \mbox{\hyperlink{classvlk_1_1Matrix3}{Matrix3}} \mbox{\hyperlink{classvlk_1_1Matrix3_a7c1e79992a5217d1b0c57ae3509193e6}{Create\+Reflection\+XY}} ()
-\begin{DoxyCompactList}\small\item\em Creates a matrix that reflects along the X and Y-\/axes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactList}\small\item\em Creates a matrix that reflects along the Y-\/axis. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Column-\/major 3x3 matrix. Used to store and apply transformations in 2d space. 
+Column-\/major 3x3 transformation matrix. 
+
+Used to store and apply transformations in 2d space 
 
 \doxysubsection{Constructor \& Destructor Documentation}
 \mbox{\Hypertarget{classvlk_1_1Matrix3_ae03e7823483b482e8d4ceaf8789956f9}\label{classvlk_1_1Matrix3_ae03e7823483b482e8d4ceaf8789956f9}} 

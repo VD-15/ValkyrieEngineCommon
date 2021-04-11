@@ -20,7 +20,6 @@ static Float \mbox{\hyperlink{classvlk_1_1Vector2_a741d9451e835845d33c839b18c444
 \begin{DoxyCompactList}\small\item\em Returns the square length of this vector. Can be faster than calculating \mbox{\hyperlink{classvlk_1_1Vector2_a4a5bacdaa4adf1e938da1911a4169b76}{Length}}. If you\textquotesingle{}re just comparing the relative length of vectors and don\textquotesingle{}t need the actual magnitude, use this. \end{DoxyCompactList}\item 
 static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ Float $>$ \mbox{\hyperlink{classvlk_1_1Vector2_a106de8ad33b4828a85dbff595ae831ab}{Square\+Length}} (\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$ v)
 \begin{DoxyCompactList}\small\item\em Returns the square length of this vector. Can be faster than calculating \mbox{\hyperlink{classvlk_1_1Vector2_a4a5bacdaa4adf1e938da1911a4169b76}{Length}}. If you\textquotesingle{}re just comparing the relative length of vectors and don\textquotesingle{}t need the actual magnitude, use this. \end{DoxyCompactList}\item 
-\mbox{\Hypertarget{classvlk_1_1Vector2_aef36382cf25c4a0a0916e485404cc327}\label{classvlk_1_1Vector2_aef36382cf25c4a0a0916e485404cc327}} 
 static \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \mbox{\hyperlink{classvlk_1_1Vector2_aef36382cf25c4a0a0916e485404cc327}{Normalized}} (const \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \&v)
 \begin{DoxyCompactList}\small\item\em Returns a unit vector with the same direction as {\ttfamily v}. \end{DoxyCompactList}\item 
 static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$ \mbox{\hyperlink{classvlk_1_1Vector2_ab9098ca554ab79ad515cee774896e705}{Normalized}} (\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$ v)
@@ -137,16 +136,32 @@ Linearly interpolates between two vectors.
 \begin{DoxyRemark}{Remarks}
 Constexpr-\/compatible overload. Do not use in runtime code. 
 \end{DoxyRemark}
+\mbox{\Hypertarget{classvlk_1_1Vector2_aef36382cf25c4a0a0916e485404cc327}\label{classvlk_1_1Vector2_aef36382cf25c4a0a0916e485404cc327}} 
+\index{vlk::Vector2@{vlk::Vector2}!Normalized@{Normalized}}
+\index{Normalized@{Normalized}!vlk::Vector2@{vlk::Vector2}}
+\doxysubsubsection{\texorpdfstring{Normalized()}{Normalized()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} vlk\+::\+Vector2\+::\+Normalized (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} \&}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+
+
+Returns a unit vector with the same direction as {\ttfamily v}. 
+
+\begin{DoxyWarning}{Warning}
+If the provided vector has a length of zero, both components of the returned vector will be {\ttfamily NaN} 
+\end{DoxyWarning}
 \mbox{\Hypertarget{classvlk_1_1Vector2_ab9098ca554ab79ad515cee774896e705}\label{classvlk_1_1Vector2_ab9098ca554ab79ad515cee774896e705}} 
 \index{vlk::Vector2@{vlk::Vector2}!Normalized@{Normalized}}
 \index{Normalized@{Normalized}!vlk::Vector2@{vlk::Vector2}}
-\doxysubsubsection{\texorpdfstring{Normalized()}{Normalized()}}
+\doxysubsubsection{\texorpdfstring{Normalized()}{Normalized()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
 {\footnotesize\ttfamily static \mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$\mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}}$>$ vlk\+::\+Vector2\+::\+Normalized (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classvlk_1_1ConstexprWrapper}{Constexpr\+Wrapper}}$<$ \mbox{\hyperlink{classvlk_1_1Vector2}{Vector2}} $>$}]{v }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
 
 
 
 Returns a unit vector with the same direction as {\ttfamily v}. 
 
+\begin{DoxyWarning}{Warning}
+If the provided vector has a length of zero, both components of the returned vector will be {\ttfamily NaN}
+\end{DoxyWarning}
 \begin{DoxyRemark}{Remarks}
 Constexpr-\/compatible overload. Do not use in runtime code. 
 \end{DoxyRemark}

@@ -38,7 +38,8 @@ TEST_CASE("Quaternion copy constructor")
 
 TEST_CASE("Quaternion move constructor")
 {
-	Quaternion p(std::move(Quaternion(1.0f, 2.0f, 5.0f, -2.0f)));
+	Quaternion tmp(1.0f, 2.0f, 5.0f, -2.0);
+	Quaternion p(std::move(tmp));
 
 	REQUIRE(p[0] == 1.0f);
 	REQUIRE(p[1] == 2.0f);
@@ -60,8 +61,8 @@ TEST_CASE("Quaternion copy assignment operator")
 
 TEST_CASE("Quaternion move assignment operator")
 {
-	Quaternion p;
-	p = std::move(Quaternion(1.0f, 2.0f, 5.0f, -2.0f));
+	Quaternion tmp(1.0f, 2.0f, 5.0f, -2.0f);
+	Quaternion p = std::move(tmp);
 
 	REQUIRE(p[0] == 1.0f);
 	REQUIRE(p[1] == 2.0f);

@@ -80,7 +80,7 @@ std::initializer_list<float> reducedValues
 class Vector2Generator : public Catch::Generators::IGenerator<Vector2>
 {
 	Vector2 v;
-	Point<> index;
+	VectorBase<2, Size> index;
 	public:
 
 	Vector2Generator() = default;
@@ -92,13 +92,13 @@ class Vector2Generator : public Catch::Generators::IGenerator<Vector2>
 
 	bool next() override
 	{
-		index.X()++;
-		if (index.X() > testValues.size())
+		index[0]++;
+		if (index[0] > testValues.size())
 		{
-			index.X() = 0;
-			index.Y()++;
+			index[0] = 0;
+			index[1]++;
 
-			if (index.Y() > testValues.size())
+			if (index[1] > testValues.size())
 			{
 				return false;
 			}
@@ -150,7 +150,8 @@ TEST_CASE("Vector2 move constructor")
 	auto i = GENERATE(values(testValues));
 	auto j = GENERATE(values(testValues));
 
-	Vector2 v(std::move(Vector2(i, j)));
+	Vector2 tmp(i, j);
+	Vector2 v(std::move(tmp));
 	REQUIRE(v.X() == i);
 	REQUIRE(v.Y() == j);
 }
@@ -174,8 +175,9 @@ TEST_CASE("Vector2 move assignment operator")
 	auto i = GENERATE(values(testValues));
 	auto j = GENERATE(values(testValues));
 
-	Vector2 v(10.0f, 20.0f);
-	v = std::move(Vector2(i, j));
+	Vector2 tmp(i, j);
+	Vector2 v(std::move(tmp));
+	v = Vector2(i, j);
 
 	REQUIRE(v.X() == i);
 	REQUIRE(v.Y() == j);

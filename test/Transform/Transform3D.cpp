@@ -45,7 +45,8 @@ TEST_CASE("Transform3D constructors")
 
 	SECTION("Transform3D move constructor")
 	{
-		Transform3D t(std::move(Transform3D(s)));
+		Transform3D tmp(s);
+		Transform3D t(std::move(tmp));
 
 		REQUIRE(t.translation == s.translation);
 		REQUIRE(t.rotation == s.rotation);
@@ -66,8 +67,8 @@ TEST_CASE("Transform3D constructors")
 
 	SECTION("Transform3D move assignment operator")
 	{
-		Transform3D t;
-		t = std::move(Transform3D(s));
+		Transform3D tmp(s);
+		Transform3D t = std::move(tmp);
 		
 		REQUIRE(t.translation == s.translation);
 		REQUIRE(t.rotation == s.rotation);

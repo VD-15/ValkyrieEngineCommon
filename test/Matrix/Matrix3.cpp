@@ -74,10 +74,11 @@ TEST_CASE("Matrix3 copy constructor")
 
 TEST_CASE("Matrix3 move constructor")
 {
-	Matrix3 m(Matrix3(
+	Matrix3 tmp(
 		0.0f, 1.0f, 2.0f,
 		9.0f, 8.0f, 7.0f,
-		3.0f, 4.0f, 5.0f));
+		3.0f, 4.0f, 5.0f);
+	Matrix3 m(std::move(tmp));
 
 	REQUIRE(m[0][0] == 0.0f);
 	REQUIRE(m[0][1] == 9.0f);
@@ -112,11 +113,11 @@ TEST_CASE("Matrix3 copy assignment operator")
 
 TEST_CASE("Matrix3 move assignment operator")
 {
-	Matrix3 m;
-	m = std::move(Matrix3(
+	Matrix3 tmp(
 		0.0f, 1.0f, 2.0f,
 		9.0f, 8.0f, 7.0f,
-		3.0f, 4.0f, 5.0f));
+		3.0f, 4.0f, 5.0f);
+	Matrix3 m = std::move(tmp);
 
 	REQUIRE(m[0][0] == 0.0f);
 	REQUIRE(m[0][1] == 9.0f);

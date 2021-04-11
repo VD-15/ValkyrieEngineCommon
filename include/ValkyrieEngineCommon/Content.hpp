@@ -34,7 +34,7 @@ namespace vlk
 	 * \param path The location of the content file on the disk.
 	 */
 	template <typename T>
-	VLK_NODISCARD T* ConstructContent(const std::string& path)
+	VLK_NODISCARD T* ConstructContent(const std::string&)
 	{
 		VLK_STATIC_ASSERT_MSG((!std::is_same<T, T>::value), "Generic template for vlk::ConstructContent being compiled. Template must be specialized.");
 		throw std::runtime_error("Generic template for vlk::ConstructContent called. Template must be specialized.");
@@ -58,7 +58,7 @@ namespace vlk
 	 * \param t The instance of T to destroy.
 	 */
 	template <typename T>
-	void DestroyContent(T* t)
+	void DestroyContent(T*)
 	{
 		VLK_STATIC_ASSERT_MSG((!std::is_same<T, T>::value), "Generic template for vlk::ConstructContent being compiled. Template must be specialized.");
 		throw std::runtime_error("Generic template for vlk::ConstructContent called. Template must be specialized.");

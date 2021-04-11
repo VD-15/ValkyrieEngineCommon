@@ -7,7 +7,7 @@ using namespace vlk;
 class Vector4Generator : public Catch::Generators::IGenerator<Vector4>
 {
 	Vector4 v;
-	VectorBase<4, Int> index;
+	VectorBase<4, Size> index;
 	public:
 	Vector4Generator()
 	{ }
@@ -121,7 +121,8 @@ TEST_CASE("Vector4 move constructor")
 	auto r = GENERATE(values(reducedValues));
 	auto q = GENERATE(values(reducedValues));
 
-	Vector4 v(std::move(Vector4(s, t, r, q)));
+	Vector4 tmp(s, t, r, q);
+	Vector4 v(std::move(tmp));
 
 	REQUIRE(v.X() == s);
 	REQUIRE(v.Y() == t);
@@ -152,7 +153,8 @@ TEST_CASE("Vector4 move assignment operator")
 	auto r = GENERATE(values(reducedValues));
 	auto q = GENERATE(values(reducedValues));
 
-	Vector4 v = std::move(Vector4(s, t, r, q));
+	Vector4 tmp(s, t, r, q);
+	Vector4 v = std::move(tmp);
 
 	REQUIRE(v.X() == s);
 	REQUIRE(v.Y() == t);

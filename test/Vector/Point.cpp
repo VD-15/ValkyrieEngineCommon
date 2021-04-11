@@ -43,14 +43,16 @@ TEST_CASE("Copy operator")
 
 TEST_CASE("Move constructor")
 {
-	Point<Int> p(std::move(Point<Int>(213890, -13284)));
+	Point<Int> tmp(213890, -13284);
+	Point<Int> p(std::move(tmp));
 	REQUIRE(p.X() == 213890);
 	REQUIRE(p.Y() == -13284);
 }
 
 TEST_CASE("Move operator")
 {
-	Point<Int> p = std::move(Point<Int>(72354, -457890));
+	Point<Int> tmp(72354, -457890);
+	Point<Int> p = std::move(tmp);
 	REQUIRE(p.X() == 72354);
 	REQUIRE(p.Y() == -457890);
 }

@@ -45,7 +45,8 @@ TEST_CASE("Transform2D constructors")
 
 	SECTION("Transform2D move constructor")
 	{
-		Transform2D t(std::move(Transform2D(s)));
+		Transform2D tmp(s);
+		Transform2D t(std::move(tmp));
 
 		REQUIRE(t.translation == s.translation);
 		REQUIRE(t.rotation == s.rotation);
@@ -66,8 +67,8 @@ TEST_CASE("Transform2D constructors")
 
 	SECTION("Transform2D move assignment operator")
 	{
-		Transform2D t;
-		t = std::move(Transform2D(s));
+		Transform2D tmp(s);
+		Transform2D t = std::move(tmp);
 		
 		REQUIRE(t.translation == s.translation);
 		REQUIRE(t.rotation == s.rotation);

@@ -78,31 +78,32 @@ TEST_CASE("Matrix4 copy constructor")
 
 	Matrix4 n(m);
 
-	REQUIRE(m[0][0] == 0.0f);
-	REQUIRE(m[0][1] == 9.0f);
-	REQUIRE(m[0][2] == 3.0f);
-	REQUIRE(m[0][3] == 2.0f);
-	REQUIRE(m[1][0] == 1.0f);
-	REQUIRE(m[1][1] == 8.0f);
-	REQUIRE(m[1][2] == 4.0f);
-	REQUIRE(m[1][3] == 6.0f);
-	REQUIRE(m[2][0] == 2.0f);
-	REQUIRE(m[2][1] == 7.0f);
-	REQUIRE(m[2][2] == 5.0f);
-	REQUIRE(m[2][3] == 1.0f);
-	REQUIRE(m[3][0] == -2.0f);
-	REQUIRE(m[3][1] == 0.0f);
-	REQUIRE(m[3][2] == 4.0f);
-	REQUIRE(m[3][3] == -7.0f);
+	REQUIRE(n[0][0] == 0.0f);
+	REQUIRE(n[0][1] == 9.0f);
+	REQUIRE(n[0][2] == 3.0f);
+	REQUIRE(n[0][3] == 2.0f);
+	REQUIRE(n[1][0] == 1.0f);
+	REQUIRE(n[1][1] == 8.0f);
+	REQUIRE(n[1][2] == 4.0f);
+	REQUIRE(n[1][3] == 6.0f);
+	REQUIRE(n[2][0] == 2.0f);
+	REQUIRE(n[2][1] == 7.0f);
+	REQUIRE(n[2][2] == 5.0f);
+	REQUIRE(n[2][3] == 1.0f);
+	REQUIRE(n[3][0] == -2.0f);
+	REQUIRE(n[3][1] == 0.0f);
+	REQUIRE(n[3][2] == 4.0f);
+	REQUIRE(n[3][3] == -7.0f);
 }
 
 TEST_CASE("Matrix4 move constructor")
 {
-	Matrix4 m(Matrix4(
+	Matrix4 tmp(
 		0.0f, 1.0f, 2.0f, -2.0f,
 		9.0f, 8.0f, 7.0f,  0.0f,
 		3.0f, 4.0f, 5.0f,  4.0f,
-		2.0f, 6.0f, 1.0f, -7.0f));
+		2.0f, 6.0f, 1.0f, -7.0f);
+	Matrix4 m(std::move(tmp));
 
 	REQUIRE(m[0][0] == 0.0f);
 	REQUIRE(m[0][1] == 9.0f);
@@ -132,32 +133,32 @@ TEST_CASE("Matrix4 copy assignment operator")
 
 	Matrix4 n = m;
 
-	REQUIRE(m[0][0] == 0.0f);
-	REQUIRE(m[0][1] == 9.0f);
-	REQUIRE(m[0][2] == 3.0f);
-	REQUIRE(m[0][3] == 2.0f);
-	REQUIRE(m[1][0] == 1.0f);
-	REQUIRE(m[1][1] == 8.0f);
-	REQUIRE(m[1][2] == 4.0f);
-	REQUIRE(m[1][3] == 6.0f);
-	REQUIRE(m[2][0] == 2.0f);
-	REQUIRE(m[2][1] == 7.0f);
-	REQUIRE(m[2][2] == 5.0f);
-	REQUIRE(m[2][3] == 1.0f);
-	REQUIRE(m[3][0] == -2.0f);
-	REQUIRE(m[3][1] == 0.0f);
-	REQUIRE(m[3][2] == 4.0f);
-	REQUIRE(m[3][3] == -7.0f);
+	REQUIRE(n[0][0] == 0.0f);
+	REQUIRE(n[0][1] == 9.0f);
+	REQUIRE(n[0][2] == 3.0f);
+	REQUIRE(n[0][3] == 2.0f);
+	REQUIRE(n[1][0] == 1.0f);
+	REQUIRE(n[1][1] == 8.0f);
+	REQUIRE(n[1][2] == 4.0f);
+	REQUIRE(n[1][3] == 6.0f);
+	REQUIRE(n[2][0] == 2.0f);
+	REQUIRE(n[2][1] == 7.0f);
+	REQUIRE(n[2][2] == 5.0f);
+	REQUIRE(n[2][3] == 1.0f);
+	REQUIRE(n[3][0] == -2.0f);
+	REQUIRE(n[3][1] == 0.0f);
+	REQUIRE(n[3][2] == 4.0f);
+	REQUIRE(n[3][3] == -7.0f);
 }
 
 TEST_CASE("Matrix4 move assignment operator")
 {
-	Matrix4 m;
-	m = std::move(Matrix4(
+	Matrix4 tmp(
 		0.0f, 1.0f, 2.0f, -2.0f,
 		9.0f, 8.0f, 7.0f,  0.0f,
 		3.0f, 4.0f, 5.0f,  4.0f,
-		2.0f, 6.0f, 1.0f, -7.0f));
+		2.0f, 6.0f, 1.0f, -7.0f);
+	Matrix4 m(std::move(tmp));
 
 	REQUIRE(m[0][0] == 0.0f);
 	REQUIRE(m[0][1] == 9.0f);
@@ -794,16 +795,16 @@ TEST_CASE("Matrix4 reflection")
 TEST_CASE("Matrix4 angle-axis")
 {
 	Vector4 v(-1.f, -1.f, -1.f, 1.f);
-	Matrix4 m(Matrix4::CreateRotation(vlk::Pi, Vector3::Normalized(Vector3(1.f, 1.f, 1.f))));
+	Matrix4 m(Matrix4::CreateRotation(vlk::Pi, Vector3::Normalized(Vector3(1.f, 0.f, 0.f))));
 	Matrix4 n(Matrix4::CreateRotation(ForceCXPR(vlk::Pi), 
-		ForceCXPR(Vector3::Normalized(Vector3(1.f, 1.f, 1.f)))));
+		ForceCXPR(Vector3::Normalized(Vector3(1.f, 0.f, 0.f)))));
 	Vector4 u(m * v);
 	
 	for (int x = 0; x < 4; x++)
 	{
 		for (int y = 0; y < 4; y++)
 		{
-			REQUIRE(m[x][y] == Approx(n[x][y]));
+			REQUIRE(m[x][y] == Approx(n[x][y]).margin(0.00001));
 		}
 
 	}
@@ -812,4 +813,8 @@ TEST_CASE("Matrix4 angle-axis")
 	REQUIRE(v[1] == Approx(-1.f));
 	REQUIRE(v[2] == Approx(-1.f));
 	REQUIRE(v[3] == Approx( 1.f));
+	REQUIRE(u[0] == Approx(-1.f));
+	REQUIRE(u[1] == Approx( 1.f));
+	REQUIRE(u[2] == Approx( 1.f));
+	REQUIRE(u[3] == Approx( 1.f));
 }

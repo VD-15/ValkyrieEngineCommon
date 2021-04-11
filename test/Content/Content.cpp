@@ -25,12 +25,12 @@ class MyEventListener :
 	typedef Content<MyContent>::LoadEvent LoadEvent;
 	typedef Content<MyContent>::UnloadEvent UnloadEvent;
 
-	void OnEvent(const LoadEvent& ev) override
+	void OnEvent(const LoadEvent&) override
 	{
 		loadedEvents++;
 	}
 
-	void OnEvent(const UnloadEvent& ev) override
+	void OnEvent(const UnloadEvent&) override
 	{
 		unloadedEvents++;
 	}

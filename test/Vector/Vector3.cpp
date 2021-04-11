@@ -5,7 +5,7 @@ using namespace vlk;
 class Vector3Generator : public Catch::Generators::IGenerator<Vector3>
 {
 	Vector3 v;
-	VectorBase<3, Int> index;
+	VectorBase<3, Size> index;
 	public:
 	Vector3Generator()
 	{ }
@@ -104,7 +104,8 @@ TEST_CASE("Vector3 move constructor")
 	auto t = GENERATE(values(testValues));
 	auto r = GENERATE(values(testValues));
 
-	Vector3 v(std::move(Vector3(s, t, r)));
+	Vector3 tmp(s, t, r);
+	Vector3 v(std::move(tmp));
 
 	REQUIRE(v.X() == s);
 	REQUIRE(v.Y() == t);
@@ -131,7 +132,8 @@ TEST_CASE("Vector3 move assignment operator")
 	auto t = GENERATE(values(testValues));
 	auto r = GENERATE(values(testValues));
 
-	Vector3 v = std::move(Vector3(s, t, r));
+	Vector3 tmp(s, t, r);
+	Vector3 v = std::move(tmp);
 
 	REQUIRE(v.X() == s);
 	REQUIRE(v.Y() == t);
@@ -360,17 +362,13 @@ TEST_CASE("Vector3 lerp")
 	Vector3 v = GENERATE(take(10, Vector3Generator::GetWrapper()));
 	Vector3 u = GENERATE(take(10, Vector3Generator::GetWrapper()));
 
-	SECTION("Step lerp")
-	{
-		auto t = GENERATE(range(0.0f, 1.0f, 0.1f));
-		Vector3 uv(Vector3::Lerp(u, v, t));
-		Vector3 vu(Vector3::Lerp(v, u, 1.0f - t));
+	Vector3 uv(Vector3::Lerp(u, v, t));
+	Vector3 vu(Vector3::Lerp(v, u, 1.0f - t));
 
-		//Need to be a bit more liberal here, so increase the margin of error.
-		REQUIRE(uv.X() == Approx(vu.X()).margin(0.0001));
-		REQUIRE(uv.Y() == Approx(vu.Y()).margin(0.0001));
-		REQUIRE(uv.Z() == Approx(vu.Z()).margin(0.0001));
-	}
+	//Need to be a bit more liberal here, so increase the margin of error.
+	REQUIRE(uv.X() == Approx(vu.X()).margin(0.0001));
+	REQUIRE(uv.Y() == Approx(vu.Y()).margin(0.0001));
+	REQUIRE(uv.Z() == Approx(vu.Z()).margin(0.0001));
 }
 
 TEST_CASE("Vector3 cross product")

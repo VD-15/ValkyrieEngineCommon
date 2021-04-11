@@ -20,7 +20,7 @@ namespace vlk
 		VLK_CXX14_CONSTEXPR inline VectorBase<N, Val>() :
 			data {}
 		{
-			for (int i = 0; i < N; i++)
+			for (Size i = 0; i < N; i++)
 			{
 				data[i] = 0.0f;
 			}
@@ -29,7 +29,7 @@ namespace vlk
 		VLK_CXX14_CONSTEXPR inline VectorBase<N, Val>(const ArrayType& arr) :
 			data {}
 		{
-		   for (int i = 0; i < N; i++)
+		   for (Size i = 0; i < N; i++)
 		   {
 			   data[i] = arr[i];
 		   }
@@ -50,58 +50,58 @@ namespace vlk
 		VLK_CXX14_CONSTEXPR inline SelfType operator+(const SelfType& rhs) const
 		{
 			ArrayType tmp;
-			for (int i = 0; i < N; i++) tmp[i] = data[i] + rhs[i];
+			for (Size i = 0; i < N; i++) tmp[i] = data[i] + rhs[i];
 			return VectorBase<N, Val>(tmp);
 		}
 
 		VLK_CXX14_CONSTEXPR inline SelfType operator-(const SelfType& rhs) const
 		{
 			ArrayType tmp;
-			for (int i = 0; i < N; i++) tmp[i] = data[i] - rhs[i];
+			for (Size i = 0; i < N; i++) tmp[i] = data[i] - rhs[i];
 			return VectorBase<N, Val>(tmp);
 		}
 
 		VLK_CXX14_CONSTEXPR inline SelfType operator*(const Val v) const
 		{
 			ArrayType tmp;
-			for (int i = 0; i < N; i++) tmp[i] = data[i] * v;
+			for (Size i = 0; i < N; i++) tmp[i] = data[i] * v;
 			return VectorBase<N, Val>(tmp);
 		}
 
 		VLK_CXX14_CONSTEXPR inline SelfType operator/(const Val v) const
 		{
 			ArrayType tmp;
-			for (int i = 0; i < N; i++) tmp[i] = data[i] / v;
+			for (Size i = 0; i < N; i++) tmp[i] = data[i] / v;
 			return VectorBase<N, Val>(tmp);
 		}
 
 		VLK_CXX14_CONSTEXPR inline SelfType& operator+=(const SelfType& rhs)
 		{
-			for (int i = 0; i < N; i++) data[i] += rhs[i];
+			for (Size i = 0; i < N; i++) data[i] += rhs[i];
 			return *this;
 		}
 
 		VLK_CXX14_CONSTEXPR inline SelfType& operator-=(const SelfType& rhs)
 		{
-			for (int i = 0; i < N; i++) data[i] -= rhs[i];
+			for (Size i = 0; i < N; i++) data[i] -= rhs[i];
 			return *this;
 		}
 
 		VLK_CXX14_CONSTEXPR inline SelfType& operator*=(const Val v)
 		{
-			for (int i = 0; i < N; i++) data[i] *= v;
+			for (Size i = 0; i < N; i++) data[i] *= v;
 			return *this;
 		}
 
 		VLK_CXX14_CONSTEXPR inline SelfType& operator/=(const Val v)
 		{
-			for (int i = 0; i < N; i++) data[i] /= v;
+			for (Size i = 0; i < N; i++) data[i] /= v;
 			return *this;
 		}
 
 		VLK_CXX14_CONSTEXPR inline bool operator==(const SelfType& rhs) const
 		{
-			for (int i = 0; i < N; i++)
+			for (Size i = 0; i < N; i++)
 			{
 				if (data[i] != rhs[i]) return false;
 			}
@@ -111,7 +111,7 @@ namespace vlk
 
 		VLK_CXX14_CONSTEXPR inline bool operator!=(const SelfType& rhs) const
 		{
-			for (int i = 0; i < N; i++)
+			for (Size i = 0; i < N; i++)
 			{
 				if (data[i] != rhs[i]) return true;
 			}

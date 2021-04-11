@@ -22,9 +22,9 @@ namespace vlk
 
 		VLK_CXX14_CONSTEXPR inline MatrixBase<N, M, Val>()
 		{
-			for (int n = 0; n < N; n++)
+			for (Size n = 0; n < N; n++)
 			{
-				for (int m = 0; m < M; m++)
+				for (Size m = 0; m < M; m++)
 				{
 					data[n][m] = 0.0;
 				}
@@ -33,9 +33,9 @@ namespace vlk
 
 		VLK_CXX14_CONSTEXPR inline MatrixBase<N, M, Val>(const DataType& dat)
 		{
-			for (int n = 0; n < N; n++)
+			for (Size n = 0; n < N; n++)
 			{
-				for (int m = 0; m < M; m++)
+				for (Size m = 0; m < M; m++)
 				{
 					data[n][m] = dat[n][m];
 				}
@@ -51,9 +51,9 @@ namespace vlk
 		VLK_CXX14_CONSTEXPR inline SelfType operator+(const SelfType& rhs) const
 		{
 			DataType tmp;
-			for (int n = 0; n < N; n++)
+			for (Size n = 0; n < N; n++)
 			{
-				for (int m = 0; m < M; m++)
+				for (Size m = 0; m < M; m++)
 				{
 					tmp[n][m] = data[n][m] + rhs[n][m];
 				}
@@ -64,9 +64,9 @@ namespace vlk
 		VLK_CXX14_CONSTEXPR inline SelfType operator-(const SelfType& rhs) const
 		{
 			DataType tmp;
-			for (int n = 0; n < N; n++)
+			for (Size n = 0; n < N; n++)
 			{
-				for (int m = 0; m < M; m++)
+				for (Size m = 0; m < M; m++)
 				{
 					tmp[n][m] = data[n][m] - rhs[n][m];
 				}
@@ -77,9 +77,9 @@ namespace vlk
 		VLK_CXX14_CONSTEXPR inline SelfType operator+(const Val& rhs) const
 		{
 			DataType tmp;
-			for (int n = 0; n < N; n++)
+			for (Size n = 0; n < N; n++)
 			{
-				for (int m = 0; m < M; m++)
+				for (Size m = 0; m < M; m++)
 				{
 					tmp[n][m] = data[n][m] + rhs;
 				}
@@ -90,9 +90,9 @@ namespace vlk
 		VLK_CXX14_CONSTEXPR inline SelfType operator-(const Val& rhs) const
 		{
 			DataType tmp;
-			for (int n = 0; n < N; n++)
+			for (Size n = 0; n < N; n++)
 			{
-				for (int m = 0; m < M; m++)
+				for (Size m = 0; m < M; m++)
 				{
 					tmp[n][m] = data[n][m] - rhs;
 				}
@@ -103,9 +103,9 @@ namespace vlk
 		VLK_CXX14_CONSTEXPR inline SelfType operator*(const Val& rhs) const
 		{
 			DataType tmp;
-			for (int n = 0; n < N; n++)
+			for (Size n = 0; n < N; n++)
 			{
-				for (int m = 0; m < M; m++)
+				for (Size m = 0; m < M; m++)
 				{
 					tmp[n][m] = data[n][m] * rhs;
 				}
@@ -116,9 +116,9 @@ namespace vlk
 		VLK_CXX14_CONSTEXPR inline SelfType operator/(const Val& rhs) const
 		{
 			DataType tmp;
-			for (int n = 0; n < N; n++)
+			for (Size n = 0; n < N; n++)
 			{
-				for (int m = 0; m < M; m++)
+				for (Size m = 0; m < M; m++)
 				{
 					tmp[n][m] = data[n][m] / rhs;
 				}
@@ -128,9 +128,9 @@ namespace vlk
 
 		VLK_CXX14_CONSTEXPR inline SelfType& operator+=(const SelfType& rhs)
 		{
-			for (int n = 0; n < N; n++)
+			for (Size n = 0; n < N; n++)
 			{
-				for (int m = 0; m < M; m++)
+				for (Size m = 0; m < M; m++)
 				{
 					data[n][m] += rhs[n][m];
 				}
@@ -140,9 +140,9 @@ namespace vlk
 
 		VLK_CXX14_CONSTEXPR inline SelfType& operator-=(const SelfType& rhs)
 		{
-			for (int n = 0; n < N; n++)
+			for (Size n = 0; n < N; n++)
 			{
-				for (int m = 0; m < M; m++)
+				for (Size m = 0; m < M; m++)
 				{
 					data[n][m] -= rhs[n][m];
 				}
@@ -152,9 +152,9 @@ namespace vlk
 
 		VLK_CXX14_CONSTEXPR inline SelfType& operator+=(const Val& rhs)
 		{
-			for (int n = 0; n < N; n++)
+			for (Size n = 0; n < N; n++)
 			{
-				for (int m = 0; m < M; m++)
+				for (Size m = 0; m < M; m++)
 				{
 					data[n][m] += rhs;
 				}
@@ -164,9 +164,9 @@ namespace vlk
 
 		VLK_CXX14_CONSTEXPR inline SelfType& operator-=(const Val& rhs)
 		{
-			for (int n = 0; n < N; n++)
+			for (Size n = 0; n < N; n++)
 			{
-				for (int m = 0; m < M; m++)
+				for (Size m = 0; m < M; m++)
 				{
 					data[n][m] -= rhs;
 				}
@@ -176,9 +176,9 @@ namespace vlk
 
 		VLK_CXX14_CONSTEXPR inline SelfType& operator*=(const Val& rhs)
 		{
-			for (int n = 0; n < N; n++)
+			for (Size n = 0; n < N; n++)
 			{
-				for (int m = 0; m < M; m++)
+				for (Size m = 0; m < M; m++)
 				{
 					data[n][m] *= rhs;
 				}
@@ -188,9 +188,9 @@ namespace vlk
 
 		VLK_CXX14_CONSTEXPR inline SelfType& operator/=(const Val& rhs)
 		{
-			for (int n = 0; n < N; n++)
+			for (Size n = 0; n < N; n++)
 			{
-				for (int m = 0; m < M; m++)
+				for (Size m = 0; m < M; m++)
 				{
 					data[n][m] /= rhs;
 				}
@@ -205,12 +205,12 @@ namespace vlk
 		VLK_CXX14_CONSTEXPR inline MatrixBase<L, M, Val> operator*(const MatrixBase<L, N, Val>& rhs) const
 		{
 			MatrixBase<L, M, Val> tmp;
-			for (int n = 0; n < N; n++)
+			for (Size n = 0; n < N; n++)
 			{
-				for (int l = 0; l < L; l++)
+				for (Size l = 0; l < L; l++)
 				{
 					//tmp[n][l] = 0.f;
-					for (int m = 0; m < M; m++)
+					for (Size m = 0; m < M; m++)
 					{
 						tmp[l][m] += data[n][m] * rhs[l][n];
 					}
@@ -225,9 +225,9 @@ namespace vlk
 		VLK_CXX14_CONSTEXPR inline ColType operator*(const ColType& rhs) const
 		{
 			ColType col;
-			for (int n = 0; n < N; n++)
+			for (Size n = 0; n < N; n++)
 			{
-				for (int m = 0; m < M; m++)
+				for (Size m = 0; m < M; m++)
 				{
 					col[n] += rhs[m] * data[m][n];
 				}
@@ -243,9 +243,9 @@ namespace vlk
 
 		VLK_CXX14_CONSTEXPR inline bool operator==(const SelfType& rhs) const
 		{
-			for (int n = 0; n < N; n++)
+			for (Size n = 0; n < N; n++)
 			{
-				for (int m = 0; m < M; m++)
+				for (Size m = 0; m < M; m++)
 				{
 					if (data[n][m] != rhs[n][m]) return false;
 				}
@@ -256,9 +256,9 @@ namespace vlk
 
 		VLK_CXX14_CONSTEXPR inline bool operator!=(const SelfType& rhs) const
 		{
-			for (int n = 0; n < N; n++)
+			for (Size n = 0; n < N; n++)
 			{
-				for (int m = 0; m < M; m++)
+				for (Size m = 0; m < M; m++)
 				{
 					if (data[n][m] != rhs[n][m]) return true;
 				}
@@ -305,17 +305,17 @@ namespace vlk
 			Val det = 0.0;
 			Val mod = 1.0;
 
-			for (int n = 0; n < S; n++)
+			for (Size n = 0; n < S; n++)
 			{
 				VectorBase<S - 1, Val> subMatrix[S - 1];
-				int x1 = 0;
+				Size x1 = 0;
 
-				for (int x = 0; x < S; x++)
+				for (Size x = 0; x < S; x++)
 				{
 					//Ignore current column
 					if (x == n) continue;
 
-					for (int y = 1; y < S; y++)
+					for (Size y = 1; y < S; y++)
 					{
 						subMatrix[x1][y - 1] = data[x][y];
 					}
@@ -342,9 +342,9 @@ namespace vlk
 		VLK_CXX14_CONSTEXPR inline SelfType Inverse() const
 		{
 			SelfType mat;
-			for (int n = 0; n < N; n++)
+			for (Size n = 0; n < N; n++)
 			{
-				for (int m = 0; m < M; m++)
+				for (Size m = 0; m < M; m++)
 				{
 					mat[n][m] = std::numeric_limits<Val>::signaling_NaN();
 				}
@@ -375,20 +375,20 @@ namespace vlk
 			MatrixBase<N - 1, M - 1, Float> subMatrix;
 
 			//Assemble minor matrix
-			for (int x = 0; x < N; x++)
+			for (Size x = 0; x < N; x++)
 			{
-				for (int y = 0; y < M; y++)
+				for (Size y = 0; y < M; y++)
 				{
 					Int n = 0; //X index to write to subMatrix
 					Int m = 0; //Y index to write to subMatrix
 
 					//Assemble subMatrix
-					for (int xx = 0; xx < N; xx++)
+					for (Size xx = 0; xx < N; xx++)
 					{
 						if (xx == x) continue; //Ignore current row
 						m = 0;
 
-						for (int yy = 0; yy < M; yy++)
+						for (Size yy = 0; yy < M; yy++)
 						{
 							if (yy == y) continue; //Ignore current colum
 							subMatrix[n][m] = data[xx][yy];
@@ -404,9 +404,9 @@ namespace vlk
 			Val determinant = 0.0;
 			Val mod = 1.0;
 
-			for (int x = 0; x < N; x++)
+			for (Size x = 0; x < N; x++)
 			{
-				for (int y = 0; y < M; y++)
+				for (Size y = 0; y < M; y++)
 				{
 					// Apply cofactor and transpose here
 					//
@@ -415,7 +415,7 @@ namespace vlk
 					// - + - +
 					// + - + -
 					// - + - +
-					if ( ((x % 2) != 0) & ((y % 2) == 0) | ((x % 2) == 0) & ((y % 2) != 0) )
+					if ( ( ((x % 2) != 0) & ((y % 2) == 0) ) | ( ((x % 2) == 0) & ((y % 2) != 0) ) )
 						mat[y][x] = -minors[x][y];
 					else
 						mat[y][x] =  minors[x][y];

@@ -271,7 +271,7 @@ namespace vlk
 		 */
 		VLK_CXX14_CONSTEXPR inline void SetParent(const Transform3D* tr)
 		{
-			for (const Transform3D* tt = tr; tt != nullptr; tt++)
+			for (const Transform3D* tt = tr; tt != nullptr; tt = tt->parent)
 			{
 				if (tt == this)
 				{

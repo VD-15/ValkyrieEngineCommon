@@ -131,9 +131,9 @@ TEST_CASE("Transform3D local rotate")
 
 	v = t.GetMatrix() * v;
 
-	REQUIRE(v.X() == Approx(5.f));
-	REQUIRE(v.Y() == Approx(2.f));
-	REQUIRE(v.Z() == Approx(-1.f));
+	REQUIRE(v.X() == Approx(4.f));
+	REQUIRE(v.Y() == Approx(4.f));
+	REQUIRE(v.Z() == Approx(-6.f));
 	REQUIRE(v.W() == Approx(1.f));
 }
 
